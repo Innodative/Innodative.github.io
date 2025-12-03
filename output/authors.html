@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Innodative Disruptor - Authors</title>
+    <link rel="stylesheet" href="/theme/css/tufte.css">
+    <script src="/theme/js/theme-toggle.js"></script>
+    
+    <!-- MathJax for mathematical notation -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            // Ensure code blocks don't get processed
+          });
+        }
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Innodative Disruptor</a></h1>
+        <nav>
+            <ul>
+                        <li><a href="/research/">Research</a></li>
+                        <li><a href="/teaching/">Teaching</a></li>
+                        <li><a href="/consulting/">Consulting</a></li>
+                        <li><a href="/media/">Media</a></li>
+                <li><a href="/thoughts/">Thoughts</a></li>
+                <li><a href="/howtos/">HowTos</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/colophon/">Colophon</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <h2>Authors on The Innodative Disruptor</h2>
+    <ul>
+            <li><a href="/author/your-name.html">Your Name</a> (3)</li>
+    </ul>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; The Innodative Disruptor. Built with <a href="https://getpelican.com/">Pelican</a> using a <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> inspired theme.</p>
+    </footer>
+</body>
+</html>

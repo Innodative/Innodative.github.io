@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thoughts | The Innodative Disruptor</title>
+    <link rel="stylesheet" href="/theme/css/tufte.css">
+    <script src="/theme/js/theme-toggle.js"></script>
+    
+    <!-- MathJax for mathematical notation -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            // Ensure code blocks don't get processed
+          });
+        }
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Innodative Disruptor</a></h1>
+        <nav>
+            <ul>
+                        <li><a href="/research/">Research</a></li>
+                        <li><a href="/teaching/">Teaching</a></li>
+                        <li><a href="/consulting/">Consulting</a></li>
+                        <li><a href="/media/">Media</a></li>
+                <li><a href="/thoughts/">Thoughts</a></li>
+                <li><a href="/howtos/">HowTos</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/colophon/">Colophon</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<section>
+    <h1>Thoughts</h1>
+    
+    <ul class="article-list">
+        <li>
+            <h2><a href="/posts/quantum-you-want/">The Quantum You Want</a></h2>
+            <p class="meta">September 17, 2025</p>
+            <p class="summary">A clear, accessible explanation of why quantum computing represents a fundamentally different approach to computation and where its most significant early impacts are likely to occur.</p>
+        </li>
+        <li>
+            <h2><a href="/posts/dancing-in-the-dark/">Dancing in the Dark</a></h2>
+            <p class="meta">July 22, 2025</p>
+            <p class="summary">A reflection on how generative AI has disrupted academia, leaving faculty uncertain, uneasy, and searching for guidance as they adapt to a rapidly changing landscape.</p>
+        </li>
+        <li>
+            <h2><a href="/posts/ghosts-in-the-machine/">Ghosts in the Machine</a></h2>
+            <p class="meta">July 02, 2025</p>
+            <p class="summary">An exploration of how generative AI embodies the accumulated knowledge of humanity and is reshaping both entry-level work and the mission of higher education.</p>
+        </li>
+    </ul>
+    
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; The Innodative Disruptor. Built with <a href="https://getpelican.com/">Pelican</a> using a <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> inspired theme.</p>
+    </footer>
+</body>
+</html>

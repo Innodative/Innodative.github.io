@@ -1,5 +1,5 @@
 # Pelican output
-output/
+# output/
 
 # Python
 __pycache__/

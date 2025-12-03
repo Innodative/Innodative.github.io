@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example Hidden Post | The Innodative Disruptor</title>
+    <link rel="stylesheet" href="/theme/css/tufte.css">
+    <script src="/theme/js/theme-toggle.js"></script>
+    
+    <!-- MathJax for mathematical notation -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            // Ensure code blocks don't get processed
+          });
+        }
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Innodative Disruptor</a></h1>
+        <nav>
+            <ul>
+                        <li><a href="/research/">Research</a></li>
+                        <li><a href="/teaching/">Teaching</a></li>
+                        <li><a href="/consulting/">Consulting</a></li>
+                        <li><a href="/media/">Media</a></li>
+                <li><a href="/thoughts/">Thoughts</a></li>
+                <li><a href="/howtos/">HowTos</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/colophon/">Colophon</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<article>
+    <h1>Example Hidden Post</h1>
+    
+    <p class="article-meta">
+        Published on December 03, 2024
+        · <a href="/thoughts/">thoughts</a>
+    </p>
+    
+    <section>
+        <p><span class="newthought">This post</span> won't appear on the site because it has <code>Status: hidden</code> in the metadata.</p>
+<p>This is useful for:
+- Posts you're working on but aren't ready to publish
+- Old content you want to archive without deleting
+- Ideas you want to keep in your source but not show publicly</p>
+<p>To make this post visible, simply remove the <code>Status: hidden</code> line from the metadata and rebuild the site.</p>
+    </section>
+    
+    <footer>
+        <p class="article-meta">Tags: 
+            meta        </p>
+    </footer>
+</article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; The Innodative Disruptor. Built with <a href="https://getpelican.com/">Pelican</a> using a <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> inspired theme.</p>
+    </footer>
+</body>
+</html>

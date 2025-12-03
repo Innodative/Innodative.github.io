@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Art of Typography in Digital Spaces | The Innodative Disruptor</title>
+    <link rel="stylesheet" href="/theme/css/tufte.css">
+    <script src="/theme/js/theme-toggle.js"></script>
+    
+    <!-- MathJax for mathematical notation -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            // Ensure code blocks don't get processed
+          });
+        }
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Innodative Disruptor</a></h1>
+        <nav>
+            <ul>
+                        <li><a href="/research/">Research</a></li>
+                        <li><a href="/teaching/">Teaching</a></li>
+                        <li><a href="/consulting/">Consulting</a></li>
+                        <li><a href="/media/">Media</a></li>
+                <li><a href="/thoughts/">Thoughts</a></li>
+                <li><a href="/howtos/">HowTos</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/colophon/">Colophon</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<article>
+    <h1>The Art of Typography in Digital Spaces</h1>
+    
+    <p class="article-meta">
+        Published on January 15, 2024
+        · <a href="/thoughts/">Thoughts</a>
+    </p>
+    
+    <section>
+        <p><span class="newthought">Good typography</span> is one of those things most people never consciously notice, but its absence is immediately felt. When we read a well-designed page, our attention stays on the content itself—the words, the ideas—rather than getting distracted by the mechanics of presentation.</p>
+<p>Edward Tufte, the statistician and artist, has spent decades advocating for better information design. His books on data visualization are themselves masterworks of typography and layout, self-published specifically so he could maintain complete control over their physical form.</p>
+<h2 id="principles-that-endure">Principles That Endure</h2>
+<p>The web has often been hostile to good typography. Early HTML offered few controls, and the explosion of web fonts and CSS has led to as many crimes against readability as improvements. Yet Tufte's principles translate remarkably well to digital spaces:</p>
+<p><strong>Minimize chartjunk.</strong> On the web, this means removing unnecessary visual elements—gratuitous animations, heavy borders, excessive whitespace between elements that should feel connected.</p>
+<p><strong>Use small multiples.</strong> When presenting related information, consistency in format allows readers to focus on differences in content rather than relearning how to parse each presentation.</p>
+<p><strong>Integrate text and graphics.</strong> The sidenote and margin note—Tufte's signature elements—keep supplementary information visible without interrupting the main narrative flow.</p>
+<h2 id="the-case-for-restraint">The Case for Restraint</h2>
+<p><label for="mn-tufte-css" class="margin-toggle">⊕</label><input type="checkbox" id="mn-tufte-css" class="margin-toggle"/><span class="marginnote">The original Tufte CSS was created by Dave Liepmann and is available under the MIT license. It demonstrates how much can be achieved with thoughtful typography alone.</span></p>
+<p>Consider the modern web page. How many elements compete for your attention right now? Ads, navigation menus, social sharing buttons, cookie consent banners, newsletter popups, chat widgets—the list grows ever longer.</p>
+<p>The Tufte approach suggests a radical simplification. A single column of readable width. Typography chosen for extended reading. Generous margins that give the eye rest and provide space for notes. Nothing that doesn't serve the reader's understanding of the content.</p>
+<p><div class="epigraph"><blockquote><p>The minimum we should hope for with any display technology is that it should do no harm.</p><footer>Edward Tufte, <cite>The Visual Display of Quantitative Information</cite></footer></blockquote></div></p>
+<p>This isn't about nostalgia for print or rejection of digital affordances. Links are useful. Search is useful. The ability to resize text or switch to dark mode serves real needs. But each addition should be weighed against the cost it imposes on attention and comprehension.</p>
+<h2 id="implementing-these-ideas">Implementing These Ideas</h2>
+<p>Building a website with these principles requires discipline. The temptation to add "just one more feature" is constant. But as with good writing, the editing process—what you choose to leave out—often matters more than what you put in.</p>
+<p>The technical implementation is surprisingly simple. A readable font at a comfortable size. Line lengths between 45 and 75 characters. Adequate line height. Hierarchical headings used consistently. These basics, properly executed, accomplish more than any amount of visual elaboration.</p>
+<p><label for="sn-serif" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-serif" class="margin-toggle"/><span class="sidenote">Studies consistently show that serif fonts and sans-serif fonts are equally readable on modern screens. The choice between them is more about tone and convention than functionality.</span></p>
+<p>The result may seem plain compared to many contemporary websites. But "plain" in this sense means "not distracting"—a feature, not a bug. The reader's experience of the content improves precisely because less competes for attention.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Typography on the web has come far enough that we can now implement classical principles with precision. The question is whether we have the discipline to do so, or whether we'll continue chasing novelty at the expense of readability.</p>
+<p>The answer, I suspect, varies by context. Marketing pages will continue to experiment and attention-grab. But for anything meant to be read carefully—articles, documentation, research—the Tufte approach offers a time-tested alternative to the chaos of modern web design.</p>
+    </section>
+    
+</article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; The Innodative Disruptor. Built with <a href="https://getpelican.com/">Pelican</a> using a <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> inspired theme.</p>
+    </footer>
+</body>
+</html>
