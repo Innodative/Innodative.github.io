@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category }} | {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section>
+    <h1>{{ category }}</h1>
+    
+    {% set visible_articles = articles|selectattr('status', 'ne', 'hidden')|list %}
+    {% if visible_articles %}
+    <ul class="article-list">
+        {% for article in visible_articles %}
+        <li>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+            <p class="meta">{{ article.date.strftime('%B %d, %Y') }}</p>
+            {% if article.summary %}
+            <p class="summary">{{ article.summary | striptags | truncate(200) }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    
+    {% if articles_page and articles_page.has_other_pages() %}
+    <nav class="pagination">
+        {% if articles_page.has_previous() %}
+        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&larr; Newer</a>
+        {% endif %}
+        
+        Page {{ articles_page.number }} of {{ articles_paginator.num_pages }}
+        
+        {% if articles_page.has_next() %}
+        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Older &rarr;</a>
+        {% endif %}
+    </nav>
+    {% endif %}
+    {% else %}
+    <p class="empty-category">No articles in this category yet.</p>
+    {% endif %}
+</section>
+{% endblock %}
