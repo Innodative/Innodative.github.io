@@ -39,7 +39,7 @@ I'm always interested in connecting with professionals and academics working at 
   </div>
   
   <input type="hidden" name="_subject" value="New contact from Innodative.com">
-  <input type="hidden" name="_next" value="https://innodative.com/contact-thanks.html">
+  <input type="hidden" name="_next" value="https://innodative.com/contact-thanks/">
   
   <button type="submit" class="submit-button">Send Message</button>
 </form>

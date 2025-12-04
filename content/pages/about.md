@@ -31,7 +31,7 @@ When not working with organizations or mentoring students, I enjoy exploring new
 ## Contact
 
 For inquiries about speaking engagements, consulting, research collaborations, or general questions, 
-please use my [contact form](/contact.html).
+please use my [contact form](/contact/).
 
 
 ---
