@@ -907,47 +907,51 @@ section > h2:first-of-type {
 }
 
 /* ============================================ */
-/* Mobile Optimizations - Reduce Padding       */
+/* Mobile Optimizations - Fix Viewport Issues  */
 /* ============================================ */
-
-@media (max-width: 760px) {
-    /* Reduce body padding */
-    body {
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-        width: calc(100% - 16px) !important;
+@media screen and (max-width: 760px) {
+    /* Force proper box sizing */
+    * {
+        box-sizing: border-box !important;
     }
     
-    /* Reduce article padding */
-    article {
-        padding: 5% 0 !important;
+    /* Contain body to viewport */
+    html, body {
         width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 8px !important;
     }
     
-    /* Reduce paragraph margins */
-    p, footer, div.table-wrapper, div.mathblock {
+    /* Force all containers to fit viewport */
+    article, section, main, div, header, footer, nav {
+        max-width: 100% !important;
         width: 100% !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-    }
-    
-    /* Navigation adjustments */
-    nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
     
-    /* Make sure headings don't have excess padding */
-    h1, h2, h3, h4, h5, h6 {
-        padding-right: 0 !important;
+    /* Fix text elements */
+    p, h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         padding-left: 0 !important;
+        padding-right: 0 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
     }
     
-    /* Reduce any container padding */
-    .content-wrapper,
-    .main-content,
-    section {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+    /* Fix any fixed-width Tufte elements */
+    .sidenote, .marginnote {
+        display: block !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 1rem 0 !important;
+        padding: 0 !important;
     }
 }
