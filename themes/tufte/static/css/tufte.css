@@ -907,22 +907,47 @@ section > h2:first-of-type {
 }
 
 /* ============================================ */
-/* Mobile Optimizations                         */
+/* Mobile Optimizations - Reduce Padding       */
 /* ============================================ */
 
 @media (max-width: 760px) {
+    /* Reduce body padding */
     body {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        width: calc(100% - 16px) !important;
     }
     
+    /* Reduce article padding */
     article {
-        padding: 0 !important;
+        padding: 5% 0 !important;
+        width: 100% !important;
     }
     
-    /* Also reduce padding in main content area */
-    .content-wrapper {
-        padding-left: 0;
-        padding-right: 0;
+    /* Reduce paragraph margins */
+    p, footer, div.table-wrapper, div.mathblock {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    
+    /* Navigation adjustments */
+    nav {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Make sure headings don't have excess padding */
+    h1, h2, h3, h4, h5, h6 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    
+    /* Reduce any container padding */
+    .content-wrapper,
+    .main-content,
+    section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
