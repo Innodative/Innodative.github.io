@@ -907,51 +907,40 @@ section > h2:first-of-type {
 }
 
 /* ============================================ */
-/* Mobile Optimizations - Fix Viewport Issues  */
+/* Mobile Fix - Override clamp() minimums      */
 /* ============================================ */
 @media screen and (max-width: 760px) {
-    /* Force proper box sizing */
-    * {
-        box-sizing: border-box !important;
-    }
-    
-    /* Contain body to viewport */
-    html, body {
+    /* Override all the clamp() minimums that are too wide for mobile */
+    article p,
+    article > ul,
+    article > ol,
+    article > blockquote,
+    article > h2,
+    article > h3,
+    article > h4,
+    section > p,
+    h1,
+    figure,
+    figure.fullwidth,
+    pre,
+    table,
+    ul,
+    ol,
+    .article-list,
+    blockquote {
         width: 100% !important;
         max-width: 100% !important;
-        overflow-x: hidden !important;
-        margin: 0 !important;
-        padding: 8px !important;
     }
     
-    /* Force all containers to fit viewport */
-    article, section, main, div, header, footer, nav {
-        max-width: 100% !important;
+    /* Ensure body doesn't have minimum that's too wide */
+    body {
         width: 100% !important;
+        max-width: 100% !important;
         margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
     
-    /* Fix text elements */
-    p, h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote {
-        max-width: 100% !important;
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-    }
-    
-    /* Fix any fixed-width Tufte elements */
-    .sidenote, .marginnote {
-        display: block !important;
-        max-width: 100% !important;
-        width: 100% !important;
-        margin: 1rem 0 !important;
-        padding: 0 !important;
-    }
+    /* Keep Tufte's sidenote/marginnote mobile behavior */
+    /* (Don't override - let the existing @media (max-width: 1000px) handle it) */
 }
