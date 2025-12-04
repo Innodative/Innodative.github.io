@@ -32,4 +32,5 @@ Consulting relationships work best through genuine partnership—external adviso
 
 ## Working Together
 
-**For consulting inquiries**: principal@innodative.com
+**For inquiries about consulting services, please [contact me](/contact/).**
+
