@@ -1,3 +1,5 @@
+# No Output Directory
+output/
 
 # Python
 __pycache__/
