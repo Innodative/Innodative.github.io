@@ -911,6 +911,7 @@ section > h2:first-of-type {
 /* ============================================ */
 @media (max-width: 760px) {
     body {
+        box-sizing: border-box !important;
         width: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
