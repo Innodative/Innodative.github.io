@@ -69,14 +69,14 @@ The human provided direction, feedback, and iteration; Claude wrote code, solved
 
 ## Source Code
 
-The complete source for this site is available on [GitHub](https://github.com/username/repo). Feel free to use it as a starting point for your own academic website.
+The complete source for this site is available on [GitHub](https://github.com/Innodative/Innodative.github.io). Feel free to use it as a starting point for your own academic website.
 
 ## License
 
 - **Theme and code**: MIT License
-- **Content**: © [Your Name]. All rights reserved.
+- **Content**: © Robert J Brunner (Innodative.com). All rights reserved.
 - **Tufte CSS**: MIT License (original work by Dave Liepmann)
 
 ## Contact
 
-Questions or suggestions about the site design? [Get in touch](mailto:name@university.edu).
+Questions or suggestions about the site design? [Get in touch](/contact/).
