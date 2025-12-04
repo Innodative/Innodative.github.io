@@ -5,6 +5,9 @@ AUTHOR = 'Your Name'
 SITENAME = 'The Innodative Disruptor'
 SITEURL = ''
 
+# Google Analytics
+GOOGLE_ANALYTICS = 'G-Y2E20JE6P5'
+
 PATH = 'content'
 TIMEZONE = 'America/Chicago'
 DEFAULT_LANG = 'en'
