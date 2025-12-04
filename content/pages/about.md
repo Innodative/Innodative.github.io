@@ -30,8 +30,9 @@ When not working with organizations or mentoring students, I enjoy exploring new
 
 ## Contact
 
-**Academic**: bigdog@illinois.edu  
-**Consulting**: principal@innodative.com
+For inquiries about speaking engagements, consulting, research collaborations, or general questions, 
+please use my [contact form](/contact.html).
+
 
 ---
 
