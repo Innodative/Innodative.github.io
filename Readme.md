@@ -252,4 +252,3 @@ Edit CSS variables in `themes/tufte/static/css/tufte.css` (see Dark Mode section
 ## License
 
 Theme and configuration are provided under the MIT License. Content is yours.
-
