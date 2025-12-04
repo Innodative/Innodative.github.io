@@ -906,3 +906,23 @@ section > h2:first-of-type {
     }
 }
 
+/* ============================================ */
+/* Mobile Optimizations                         */
+/* ============================================ */
+
+@media (max-width: 760px) {
+    body {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    
+    article {
+        padding: 0 !important;
+    }
+    
+    /* Also reduce padding in main content area */
+    .content-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
