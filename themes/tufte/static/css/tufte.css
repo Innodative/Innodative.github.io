@@ -84,13 +84,15 @@ h1 {
 }
 
 h2 {
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
-    margin-top: 2.1rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.4rem;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 1.2;
-    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-color-muted);
 }
 
 h3 {
@@ -190,7 +192,7 @@ blockquote footer {
     clear: right;
     margin-right: clamp(-340px, -24vw, -240px);
     width: clamp(200px, 20vw, 300px);
-    margin-top: 0.3rem;
+    margin-top: 1rem;
     margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.5;
@@ -311,15 +313,14 @@ article img:not(figure img):not(.sidenote img):not(.marginnote img) {
 }
 
 figcaption {
-    float: right;
-    clear: right;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.5;
     vertical-align: baseline;
     position: relative;
-    max-width: 40%;
+    width: 100%;
+    text-align: left;
     color: var(--text-color-muted);
 }
 
@@ -389,8 +390,9 @@ td {
 /* Lists */
 ul,
 ol {
-    width: clamp(550px, 50vw, 850px);
-    padding-left: 2%;
+    width: calc(clamp(600px, 55vw, 900px) - 4rem);
+    margin-left: 2.5rem;
+    padding-left: 1.5rem;
 }
 
 li {
@@ -703,6 +705,7 @@ section > h1 {
 }
 
 /* Recent articles heading on index */
+/* Removed special first-of-type h2 styling for consistency
 section > h2:first-of-type {
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
@@ -712,6 +715,7 @@ section > h2:first-of-type {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+*/
 
 /* HOMEPAGE STYLING - Two-column profile */
 
