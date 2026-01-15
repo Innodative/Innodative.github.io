@@ -18,6 +18,14 @@ For media inquiries, interviews, or speaking engagements:
 
 ### Articles & Interviews
 
+### 2026
+
+**"Illini Insider | Survey Says: 72 faculty members share preferences for UI's next president"**  
+*News-Gazette*  
+January 14, 2026  
+Faculty survey on priorities for UI System's next president and the future of higher education leadership.  
+[Read article](https://www.news-gazette.com/news/illini-insider-survey-says-72-faculty-members-share-preferences-for-uis-next-president/article_e67c5200-b49b-459b-bbf9-e01fcb8625b0.html)
+
 ### 2025
 
 **"Illini Insider | The future of AI: In the home, on the battlefield, in space, sports and beyond"**  
