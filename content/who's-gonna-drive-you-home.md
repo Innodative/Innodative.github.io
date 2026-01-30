@@ -1,13 +1,13 @@
 Title: Who's Gonna Drive You Home?
 Date: 2025-01-30
-Category: Thought Pieces
+Category: Thoughts
 Tags: AI, automation, future of work, autonomous vehicles
 Slug: whos-gonna-drive-you-home
 Author: Robert J. Brunner
 Summary: Lessons from autonomous vehicles reveal why AI job displacement may be slower and more nuanced than predicted—and why humans will likely remain in the loop longer than we think.
 
-It's hard to avoid the incessant bombardment of dire threats about the
-end of work as we know it. The pressure drives workers to question their
+{% newthought "It's hard to avoid the incessant bombardment of dire threats about the
+end of work as we know it." } The pressure drives workers to question their
 employer's intentions, and parents and their children to question their
 future. Authoritative figures seem happy to tell us how artificial
 intelligence is changing the nature of white-collar work.<span
