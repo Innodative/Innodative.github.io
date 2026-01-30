@@ -160,9 +160,9 @@ aged well.
 
 The need for radiologists hasn't dropped, it has risen; despite AI tools
 being frequently used by the profession.{% marginnote "mn-radiology"
-"[Financial Times article on AI and
+"See, for example, the recent [Financial Times article on AI and
 radiology](https://www.ft.com/content/f2e03bd9-af67-45c4-8e1e-
-79978b5bc48f)" %} One main reason for this result is the few percent
+79978b5bc48f)." %} One main reason for this result is the few percent
 problem, humans plus artificial intelligence often perform best. AI can
 quickly point out anomalies, but humans can catch things outside the
 AI's training data. But that is only part of the story. With AI's help,
