@@ -1,5 +1,5 @@
 Title: Who's Gonna Drive You Home?
-Date: 2025-01-30
+Date: 2026-01-30
 Category: Thoughts
 Tags: AI, automation, future of work, autonomous vehicles
 Slug: whos-gonna-drive-you-home
