@@ -180,7 +180,7 @@ endangered occupation.
 To be clear, I am not saying that work won't change. It already has.
 Tasks are being compressed, roles reshaped, and expectations adjusted.
 But the path forward is likely to be slower and more uneven than early
-demos suggest or the AI leaders might hope.
+demos suggest or that AI leaders might hope.
 
 Autonomous cars did not fail; they continue to mature. They taught us
 that the hardest part of automation is not getting machines to work most
