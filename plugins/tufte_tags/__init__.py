@@ -9,6 +9,8 @@ Provides Jekyll-style tags for Tufte CSS elements:
     {% fullwidth "image" "caption" %}
     {% maincolumn "image" "caption" %}
     {% marginfigure "id" "image" "caption" %}
+    {% video "video_id" "caption" %}
+    {% fullwidthvideo "video_id" "caption" %}
 
 Supports:
     - Double or single quotes as delimiters
@@ -37,6 +39,8 @@ def process_tufte_tags(content):
     text = process_fullwidth(text)
     text = process_maincolumn(text)
     text = process_marginfigure(text)
+    text = process_video(text)
+    text = process_fullwidthvideo(text)
     
     content._content = text
 
@@ -292,6 +296,54 @@ def process_marginfigure(text):
             f'<img src="{image}" alt="{caption}"/>'
             f'{caption}'
             f'</span>'
+        )
+        text = text[:start] + replacement + text[end:]
+    
+    return text
+
+
+def process_video(text):
+    """
+    Convert {% video "video_id" "caption" %} to responsive YouTube video in main column.
+    """
+    matches = parse_tag(text, 'video', 2)
+    
+    for full_match, args, start, end in reversed(matches):
+        video_id = args[0]
+        caption = render_markdown(args[1])
+        replacement = (
+            f'<figure>'
+            f'<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">'
+            f'<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" '
+            f'src="https://www.youtube.com/embed/{video_id}" '
+            f'frameborder="0" allowfullscreen></iframe>'
+            f'</div>'
+            f'<figcaption>{caption}</figcaption>'
+            f'</figure>'
+        )
+        text = text[:start] + replacement + text[end:]
+    
+    return text
+
+
+def process_fullwidthvideo(text):
+    """
+    Convert {% fullwidthvideo "video_id" "caption" %} to responsive full-width YouTube video.
+    """
+    matches = parse_tag(text, 'fullwidthvideo', 2)
+    
+    for full_match, args, start, end in reversed(matches):
+        video_id = args[0]
+        caption = render_markdown(args[1])
+        replacement = (
+            f'<figure class="fullwidth">'
+            f'<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">'
+            f'<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" '
+            f'src="https://www.youtube.com/embed/{video_id}" '
+            f'frameborder="0" allowfullscreen></iframe>'
+            f'</div>'
+            f'<figcaption>{caption}</figcaption>'
+            f'</figure>'
         )
         text = text[:start] + replacement + text[end:]
     
