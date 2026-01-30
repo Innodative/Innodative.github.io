@@ -12,14 +12,7 @@ Summary: Testing video embedding with responsive design
 
 Here's a video in the main text column:
 
-<figure>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-frameborder="0" allowfullscreen></iframe>
-</div>
-<figcaption>A standard video embedded in the main column</figcaption>
-</figure>
+{% video "dQw4w9WgXcQ" "A standard video embedded in the main column" %}
 
 This works well for supplementary videos that don't need to dominate the page.
 
@@ -27,17 +20,12 @@ This works well for supplementary videos that don't need to dominate the page.
 
 Here's a video that spans both the main text and margin area:
 
-<figure class="fullwidth">
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-frameborder="0" allowfullscreen></iframe>
-</div>
-<figcaption>A full-width video that spans the entire content area</figcaption>
-</figure>
+{% fullwidthvideo "dQw4w9WgXcQ" "A full-width video that spans the entire content area" %}
 
 This is better for key videos you want to emphasize.{% marginnote "mn-fullwidth" "On mobile, both styles collapse to full-width automatically thanks to responsive design." %}
 
 ## Testing Complete
 
-Both embedding styles are responsive and will work on mobile devices. The `padding-bottom: 56.25%` maintains the 16:9 aspect ratio across all screen sizes.
+Both embedding styles are responsive and will work on mobile devices. The video tags automatically create the proper 16:9 aspect ratio wrapper that works across all screen sizes.
+
+Now you just use simple tags like `{% video "VIDEO_ID" "caption" %}` instead of the complex HTML!
