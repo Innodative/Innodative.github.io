@@ -3,7 +3,7 @@ Date: 2026-01-30
 Category: Thoughts
 Tags: test
 Slug: video-test
-Status: draft
+Status: hidden
 Summary: Testing video embedding with responsive design
 
 {% newthought "This is a test post" %} to demonstrate video embedding with proper responsive design for both desktop and mobile viewing.
