@@ -198,10 +198,10 @@ The path forward isn't choosing between human or machine; it's learning
 when to steer and when to let the system assist. In full transparency, I
 used AI while writing this piece<span class="marginnote">In writing this
 piece, I used Claude, ChatGPT, Gemini, and Perplexity to research
-autonomous vehicle history, refine arguments, and draft sections of
-text. The structure, reasoning, and conclusions are my own, an example
-of the human–AI partnership I promote in this thought piece.</span>—not
-to replace my thinking but to sharpen it. That partnership feels like
-the right model for this story. I'm still responsible for the
-destination. I just didn't drive every mile myself. Now if I only had a
-car that did the same.
+autonomous vehicle history, refine arguments, draft sections of
+text, and assist in copy-editing. The structure, reasoning, and 
+conclusions are my own, an example of the human–AI partnership I promote 
+in this thought piece.</span>—not to replace my thinking but to sharpen it. 
+That partnership feels like the right model for this story. I'm still 
+responsible for the destination. I just didn't drive every mile myself. 
+Now if I only had a car that did the same.
