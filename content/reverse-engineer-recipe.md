@@ -101,7 +101,7 @@ Of course, you can adapt this approach to almost any baked good or food
 label. Just take a picture of the label, upload it to your favorite
 generative AI tool, and prompt:
 
-> “Can you reverse engineer a recipe from these ingredients?”
+    Can you reverse engineer a recipe from these ingredients?
 
 Now, sharp-eyed readers will note I’ve only completed the first two
 steps in my plan. I’m still waiting on the third—remember, I said I’m
@@ -110,5 +110,5 @@ these AI-powered cinnamon rolls soon, for now I just ask the original
 creator for a few extra ones on the side. :-)
 
 If you'd like to try it yourself, here is the full [generated
-recipe](images/cin-roll-recipe.pdf) from ChatGPT. If you do bake it, be
+recipe](images/howto/cin-roll-recipe.pdf) from ChatGPT. If you do bake it, be
 sure to enjoy one for me!
