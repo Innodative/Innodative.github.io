@@ -6,8 +6,8 @@ Slug: reverse-engineer-recipe
 Summary: How to Use AI to Reverse Engineer a Recipe from a Label
 
 
-{% newthought While summer brings many wonderful activities and
-traditions %}, one of my personal favorites is the summer farmer's
+{% newthought "While summer brings many wonderful activities and
+traditions" %}, one of my personal favorites is the summer farmer's
 market. While many enjoy the fresh fruits and vegetables these markets
 offer, I also enjoy the baked goods! One of my favorites comes from an
 elderly woman who sells baked goods (and gently used books) to raise
@@ -70,13 +70,11 @@ ChatGPT’s response?
 > cinnamon roll recipe using the listed ingredients.
 
 The rest of the output was structured into three components for the cinnamon rolls:
+
 - A **yeast-based dough** using mashed potato for tenderness (which ChatGPT happily 
 informed me is a common trick in old-fashioned recipes) 
 - A **cinnamon-sugar filling** made with softened butter 
 - A **maple-flavored icing** made with powdered sugar, vanilla, and maple flavoring
-
-It even broke the ingredients into dough, filling, and icing—inferring
-typical proportions based on baking logic and classic recipes.
 
 ## Why Does This Work?
 
@@ -92,7 +90,7 @@ pattern include:
 - Reading prescriptions 
 - Capturing code from screenshots
 
-So next time you take a photo, remember—you’re capturing more than just
+So next time you take a photo, remember you’re capturing more than just
 pixels. You might be holding a dataset waiting to be decoded.
 
 ## Final Thoughts
@@ -101,14 +99,14 @@ Of course, you can adapt this approach to almost any baked good or food
 label. Just take a picture of the label, upload it to your favorite
 generative AI tool, and prompt:
 
-    Can you reverse engineer a recipe from these ingredients?
+    Can you reverse engineer a recipe from this picture, which lists the ingredients?
 
 Now, sharp-eyed readers will note I’ve only completed the first two
 steps in my plan. I’m still waiting on the third—remember, I said I’m
 neither a cook nor a baker! While I remain hopeful I’ll get to taste
 these AI-powered cinnamon rolls soon, for now I just ask the original
-creator for a few extra ones on the side. :-)
+creator for a few extra ones on the side. 🙂
 
 If you'd like to try it yourself, here is the full [generated
-recipe](images/howto/cin-roll-recipe.pdf) from ChatGPT. If you do bake it, be
+recipe](/images/howto/cin-roll-recipe.pdf) from ChatGPT. If you do bake it, be
 sure to enjoy one for me!
