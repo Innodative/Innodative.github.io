@@ -6,8 +6,8 @@ Slug: reverse-engineer-recipe
 Summary: How to Use AI to Reverse Engineer a Recipe from a Label
 
 
-{% newthought "While summer brings many wonderful activities and
-traditions" %}, one of my personal favorites is the summer farmer's
+{% newthought "Summer brings many wonderful activities and
+traditions" %} and one of my personal favorites is the summer farmer's
 market. While many enjoy the fresh fruits and vegetables these markets
 offer, I also enjoy the baked goods! One of my favorites comes from an
 elderly woman who sells baked goods (and gently used books) to raise
@@ -56,7 +56,7 @@ suitable recipe.
 
 ## Label Processing
 
-As you can see in the image of the label, there’s very little
+The label itself offers very little
 detail—just a list of ingredients:
 
 > Bread Flour, Potatoes, Margarine, Sugar, Eggs, Milk, Salt, Yeast,
@@ -69,7 +69,7 @@ ChatGPT’s response?
 > Great! Based on the label in your photo, here’s a reverse-engineered
 > cinnamon roll recipe using the listed ingredients.
 
-The rest of the output was structured into three components for the cinnamon rolls:
+Without any direction on my part, CHatGPT structured the cinnamon roll recipe into three components:
 
 - A **yeast-based dough** using mashed potato for tenderness (which ChatGPT happily 
 informed me is a common trick in old-fashioned recipes) 
