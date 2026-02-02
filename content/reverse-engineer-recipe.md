@@ -34,9 +34,9 @@ As I am not a cook nor a baker, I wasn’t sure how I might tackle this
 problem. But being scientifically-minded, I thought there must be at
 least three steps:
 
-- Extract the list of ingredients from the label 
-- Find a recipe that matches this list 
-- Try the recipe out
+1. Extract the list of ingredients from the label 
+2. Find a recipe that matches this list 
+3. Try the recipe out
 
 Focusing on the first two steps, I was curious if a generative AI tool
 might be able to help. I uploaded the image of the label to ChatGPT and
@@ -45,9 +45,9 @@ simply asked:
     Do you think you could reverse engineer the recipe from the list of ingredients 
     in this picture?
 
-To my surprise, {% marginnote "mn-surprise" "In hindsight, I suppose I
-shouldn't have been so naive!" %} the AI processed the image, extracted
-the text, identified the list of ingredients {% marginnote "mn-list"
+To my surprise{% marginnote "mn-surprise" "In hindsight, I suppose I
+shouldn't have been so naive!" %}, the AI processed the image, extracted
+the text, identified the list of ingredients{% marginnote "mn-list"
 "The image I provided above was cropped from the full photo showing the
 cinnamon roll wrapped in plastic with a sticky label that included the
 ingredients, the baker’s contact info, weight in grams, and price." %},
