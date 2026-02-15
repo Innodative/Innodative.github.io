@@ -41,7 +41,9 @@ def process_tufte_tags(content):
     text = process_marginfigure(text)
     text = process_video(text)
     text = process_fullwidthvideo(text)
-    
+    text = process_marginvideo(text)
+    text = process_sidenotevideo(text)
+
     content._content = text
 
 
@@ -349,6 +351,330 @@ def process_fullwidthvideo(text):
     
     return text
 
+# =============================================================================
+# VIDEO TAG ADDITIONS FOR tufte_tags/__init__.py
+# =============================================================================
+#
+# ADD these three functions to your existing tufte_tags/__init__.py plugin.
+#
+# Then ADD these three lines to the process_tufte_tags() function,
+# AFTER the existing process_marginfigure(text) call:
+#
+#     text = process_video(text)
+#     text = process_fullwidthvideo(text)
+#     text = process_marginvideo(text)
+#
+# ALSO UPDATE the docstring at the top of the file to include:
+#     {% video "video_id" "caption" %}
+#     {% fullwidthvideo "video_id" "caption" %}
+#     {% marginvideo "id" "video_id" "caption" %}
+# =============================================================================
+
+
+def process_video(text):
+    """
+    Process video tags for main column responsive YouTube embeds.
+    
+    Syntax: {% video "VIDEO_ID" "Caption text" %}
+    
+    The VIDEO_ID is the YouTube video identifier (e.g., dQw4w9WgXcQ).
+    Caption appears below the video as a figcaption.
+    """
+    tag_pattern = r'{%\s*video\s+'
+    
+    result = []
+    pos = 0
+    
+    while pos < len(text):
+        match = re.search(tag_pattern, text[pos:])
+        if not match:
+            result.append(text[pos:])
+            break
+        
+        # Add text before the tag
+        result.append(text[pos:pos + match.start()])
+        current = pos + match.end()
+        
+        # Extract video_id
+        video_id, current = extract_quoted_string(text, current)
+        if video_id is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Extract caption
+        caption, current = extract_quoted_string(text, current)
+        if caption is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Skip to closing %}
+        close_match = re.search(r'%}', text[current:])
+        if not close_match:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        current = current + close_match.end()
+        
+        # Process markdown in caption
+        caption_html = process_inline_markdown(caption)
+        
+        # Generate responsive video HTML
+        html = (
+            f'<figure>\n'
+            f'<div class="responsive-video">\n'
+            f'<iframe src="https://www.youtube.com/embed/{video_id}" '
+            f'frameborder="0" allowfullscreen loading="lazy"></iframe>\n'
+            f'</div>\n'
+            f'<figcaption>{caption_html}</figcaption>\n'
+            f'</figure>'
+        )
+        
+        result.append(html)
+        pos = current
+    
+    return ''.join(result)
+
+
+def process_fullwidthvideo(text):
+    """
+    Process fullwidthvideo tags for wide responsive YouTube embeds.
+    
+    Syntax: {% fullwidthvideo "VIDEO_ID" "Caption text" %}
+    
+    Spans the main column and margin area for a larger presentation.
+    """
+    tag_pattern = r'{%\s*fullwidthvideo\s+'
+    
+    result = []
+    pos = 0
+    
+    while pos < len(text):
+        match = re.search(tag_pattern, text[pos:])
+        if not match:
+            result.append(text[pos:])
+            break
+        
+        # Add text before the tag
+        result.append(text[pos:pos + match.start()])
+        current = pos + match.end()
+        
+        # Extract video_id
+        video_id, current = extract_quoted_string(text, current)
+        if video_id is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Extract caption
+        caption, current = extract_quoted_string(text, current)
+        if caption is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Skip to closing %}
+        close_match = re.search(r'%}', text[current:])
+        if not close_match:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        current = current + close_match.end()
+        
+        # Process markdown in caption
+        caption_html = process_inline_markdown(caption)
+        
+        # Generate fullwidth responsive video HTML
+        html = (
+            f'<figure class="fullwidth">\n'
+            f'<div class="responsive-video">\n'
+            f'<iframe src="https://www.youtube.com/embed/{video_id}" '
+            f'frameborder="0" allowfullscreen loading="lazy"></iframe>\n'
+            f'</div>\n'
+            f'<figcaption>{caption_html}</figcaption>\n'
+            f'</figure>'
+        )
+        
+        result.append(html)
+        pos = current
+    
+    return ''.join(result)
+
+def process_inline_markdown(text):
+    """Convert inline markdown to HTML, stripping the wrapping <p> tags."""
+    html = markdown(text)
+    # Remove wrapping <p> and </p> that markdown() adds
+    html = re.sub(r'^<p>', '', html)
+    html = re.sub(r'</p>$', '', html)
+    return html.strip()
+    
+def process_marginvideo(text):
+    """
+    Process marginvideo tags for small YouTube embeds in the margin.
+    
+    Syntax: {% marginvideo "id" "VIDEO_ID" "Caption text" %}
+    
+    Similar to marginfigure but for video content. On mobile,
+    displays as a toggleable element like other margin content.
+    """
+    tag_pattern = r'{%\s*marginvideo\s+'
+    
+    result = []
+    pos = 0
+    
+    while pos < len(text):
+        match = re.search(tag_pattern, text[pos:])
+        if not match:
+            result.append(text[pos:])
+            break
+        
+        # Add text before the tag
+        result.append(text[pos:pos + match.start()])
+        current = pos + match.end()
+        
+        # Extract id
+        note_id, current = extract_quoted_string(text, current)
+        if note_id is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Extract video_id
+        video_id, current = extract_quoted_string(text, current)
+        if video_id is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Extract caption
+        caption, current = extract_quoted_string(text, current)
+        if caption is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Skip to closing %}
+        close_match = re.search(r'%}', text[current:])
+        if not close_match:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        current = current + close_match.end()
+        
+        # Process markdown in caption
+        caption_html = process_inline_markdown(caption)
+        
+        # Generate margin video HTML
+        # Uses same pattern as marginfigure: label toggle for mobile,
+        # content in margin-note span
+        html = (
+            f'<label for="{note_id}" class="margin-toggle">&#8853;</label>'
+            f'<input type="checkbox" id="{note_id}" class="margin-toggle"/>'
+            f'<span class="marginnote">'
+            f'<span class="responsive-video responsive-video--margin">'
+            f'<iframe src="https://www.youtube.com/embed/{video_id}" '
+            f'frameborder="0" allowfullscreen loading="lazy"></iframe>'
+            f'</span>'
+            f'{caption_html}'
+            f'</span>'
+        )
+        
+        result.append(html)
+        pos = current
+    
+    return ''.join(result)
+
+# =============================================================================
+# SIDENOTE VIDEO TAG ADDITION FOR tufte_tags/__init__.py
+# =============================================================================
+#
+# ADD this function to your existing tufte_tags/__init__.py plugin.
+#
+# Then ADD this line to process_tufte_tags(), after process_marginvideo(text):
+#
+#     text = process_sidenotevideo(text)
+#
+# ALSO UPDATE the docstring to include:
+#     {% sidenotevideo "id" "video_id" "caption" %}
+# =============================================================================
+
+
+def process_sidenotevideo(text):
+    """
+    Process sidenotevideo tags for YouTube embeds in sidenote position.
+    
+    Syntax: {% sidenotevideo "id" "VIDEO_ID" "Caption text" %}
+    
+    Like marginvideo but uses the sidenote pattern: a numbered superscript
+    reference appears inline in the text. On mobile, toggles open with
+    the superscript tap.
+    """
+    tag_pattern = r'{%\s*sidenotevideo\s+'
+    
+    result = []
+    pos = 0
+    
+    while pos < len(text):
+        match = re.search(tag_pattern, text[pos:])
+        if not match:
+            result.append(text[pos:])
+            break
+        
+        # Add text before the tag
+        result.append(text[pos:pos + match.start()])
+        current = pos + match.end()
+        
+        # Extract id
+        note_id, current = extract_quoted_string(text, current)
+        if note_id is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Extract video_id
+        video_id, current = extract_quoted_string(text, current)
+        if video_id is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Extract caption
+        caption, current = extract_quoted_string(text, current)
+        if caption is None:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        
+        # Skip to closing %}
+        close_match = re.search(r'%}', text[current:])
+        if not close_match:
+            result.append(text[pos + match.start():pos + match.end()])
+            pos = pos + match.end()
+            continue
+        current = current + close_match.end()
+        
+        # Process markdown in caption
+        caption_html = process_inline_markdown(caption)
+        
+        # Generate sidenote video HTML
+        # Uses sidenote pattern: numbered superscript label, sidenote class
+        html = (
+            f'<label for="{note_id}" class="margin-toggle sidenote-number"></label>'
+            f'<input type="checkbox" id="{note_id}" class="margin-toggle"/>'
+            f'<span class="sidenote">'
+            f'<span class="responsive-video responsive-video--margin">'
+            f'<iframe src="https://www.youtube.com/embed/{video_id}" '
+            f'frameborder="0" allowfullscreen loading="lazy"></iframe>'
+            f'</span>'
+            f'{caption_html}'
+            f'</span>'
+        )
+        
+        result.append(html)
+        pos = current
+    
+    return ''.join(result)
 
 def register():
     """Register the plugin with Pelican."""
