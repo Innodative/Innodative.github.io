@@ -3,7 +3,6 @@ Date: 2026-02-15
 Category: Thoughts
 Tags: AI, avatars, higher education, authenticity, synthetic media
 Slug: i-still-havent-found
-Status: hidden
 Summary: From manipulated video to interactive dialogue in four years — a journey through AI avatar development that reveals a deeper challenge: when synthetic media becomes indistinguishable, how do we define authenticity?
 
 {% newthought "When people learn what I do," %} they're often intrigued.
