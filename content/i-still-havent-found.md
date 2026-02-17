@@ -79,10 +79,17 @@ what we see.
 
 ## BUILDING THE FOUNDATION
 
-Since the first demo, we haven't stood still. In 2023, with my graduate student Eamon Bracht and Sam Chen, the former Director of the Gies Disruption Lab, we created our first commercially developed avatar using [ElevenLabs](https://elevenlabs.io){% marginnote "mn-elevenlabs" "ElevenLabs is an American AI voice technology company with a valuation of $11 billion based on a 2026 Series D. Their platform specializes in voice synthesis and cloning, enabling realistic text-to-speech and voice replication." %} for voice synthesis and [Synthesia](https://www.synthesia.io) platform{% marginnote
+Since the first demo, we haven't stood still. In 2023, with my graduate student Eamon Bracht and Sam Chen, 
+the former Director of the Gies Disruption Lab, we created our first commercially developed avatar using 
+[ElevenLabs](https://elevenlabs.io) {% marginnote "mn-elevenlabs" "ElevenLabs is an American AI voice 
+technology company with a valuation of $11 billion based on a 2026 Series D. Their platform specializes 
+in voice synthesis and cloning, enabling realistic text-to-speech and voice replication." %} for voice 
+synthesis and [Synthesia](https://www.synthesia.io) platform{% marginnote
 "mn-synthesia" "Synthesia is a UK AI firm with a valuation of $4 billion
 based on a 2026 Series E. Their platform supports standard and
-user-created digital avatars." %} to generate matching video. Initially, this was an improved demo to highlight how the technology had changed. Unlike our original demo, this wasn't manipulated video—it was completely AI-generated.
+user-created digital avatars." %} to generate matching video. Initially, this was an improved demo to 
+highlight how the technology had changed. Unlike our original demo, this wasn't manipulated video—it was 
+completely AI-generated.
 
 With help from Tim Anderson and Steven Pratten, we turned this new demo
 into a robust avatar that was used for several videos{% sidenotevideo
