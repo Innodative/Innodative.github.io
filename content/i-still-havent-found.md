@@ -54,7 +54,7 @@ This seemingly simple demonstration helped shift our college's thinking
 about online education at scale. Not because the explanation was
 clearer, but because the demonstration made abstract capabilities real.
 The visual evidence carried authority that my words never could. We saw
-how to democratize education, regardless of location or language.
+a new path to democratize education, regardless of location or language.
 
 Seeing really was believing. The future of avatars felt clear. What I
 didn't yet see was how much more there was to show.
@@ -79,15 +79,10 @@ what we see.
 
 ## BUILDING THE FOUNDATION
 
-Since the first demo, we haven't stood still. In 2023, with my graduate
-student Eamon Bracht and Sam Chen, the former Director of the Gies
-Disruption Lab, we created our first commercially developed avatar by
-using the [Synthesia](https://www.synthesia.io) platform{% marginnote
+Since the first demo, we haven't stood still. In 2023, with my graduate student Eamon Bracht and Sam Chen, the former Director of the Gies Disruption Lab, we created our first commercially developed avatar using [ElevenLabs](https://elevenlabs.io){% marginnote "mn-elevenlabs" "ElevenLabs is an American AI voice technology company with a valuation of $11 billion based on a 2026 Series D. Their platform specializes in voice synthesis and cloning, enabling realistic text-to-speech and voice replication." %} for voice synthesis and [Synthesia](https://www.synthesia.io) platform{% marginnote
 "mn-synthesia" "Synthesia is a UK AI firm with a valuation of $4 billion
 based on a 2026 Series E. Their platform supports standard and
-user-created digital avatars." %}.  Initially, this was an improved demo
-to highlight how the technology had changed. Unlike our original demo,
-this wasn't manipulated video—it was completely AI-generated.
+user-created digital avatars." %} to generate matching video. Initially, this was an improved demo to highlight how the technology had changed. Unlike our original demo, this wasn't manipulated video—it was completely AI-generated.
 
 With help from Tim Anderson and Steven Pratten, we turned this new demo
 into a robust avatar that was used for several videos{% sidenotevideo
@@ -135,8 +130,8 @@ along.
 
 Eventually, students christened the avatar "Professor Robert Burgundy"{%
 marginfigure "mf-burgundy" "/images/thoughts/professor-burgundy.png"
-"Student-created image of Professor Robert Burgundy. One student created
-this image that I liked so much I made it my course avatar on Canvas."
+"Student-created image of Professor Robert Burgundy. I liked the student's 
+work so much I made it my course avatar on Canvas."
 %} after Ron Burgundy from the movie *Anchorman*{% marginnote
 "mn-anchorman" "For more information on the movie Anchorman, see the
 [movie's iMDB page](https://www.imdb.com/title/tt0357413/)." %}, because
