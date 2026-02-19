@@ -19,15 +19,49 @@ Supports:
     - HTML inside parameters
 """
 
+import os
 import re
 from markdown import markdown
 from pelican import signals
 
+# Module-level variable for resolving relative image paths
+_source_rel_dir = ''
+
+
+def resolve_image_path(image):
+    """Resolve an image path, handling relative paths for co-located assets.
+    
+    - Absolute paths (starting with /) are returned as-is
+    - URLs (http/https) are returned as-is  
+    - Relative paths are resolved relative to the source file's directory
+    """
+    if image.startswith(('http://', 'https://')):
+        return image
+    if image.startswith('/'):
+        return image
+    # Relative path: resolve against source file's directory
+    if _source_rel_dir:
+        return '/' + _source_rel_dir + '/' + image
+    else:
+        return '/' + image
+
 
 def process_tufte_tags(content):
     """Process all Tufte tags in content."""
+    global _source_rel_dir
+    
     if not content._content:
         return
+    
+    # Compute source file's directory relative to content root
+    # This enables co-located assets (images next to their post's index.md)
+    _source_rel_dir = ''
+    if hasattr(content, 'source_path') and hasattr(content, 'settings'):
+        content_path = os.path.abspath(content.settings.get('PATH', 'content'))
+        source_dir = os.path.dirname(os.path.abspath(content.source_path))
+        rel = os.path.relpath(source_dir, content_path)
+        if rel != '.':
+            _source_rel_dir = rel
     
     text = content._content
     
@@ -241,9 +275,8 @@ def process_fullwidth(text):
     for full_match, args, start, end in reversed(matches):
         image = args[0]
         caption = render_markdown(args[1])
-        # Handle relative paths
-        if not image.startswith(('http://', 'https://', '/')):
-            image = '/' + image
+        # Resolve image path (supports co-located assets)
+        image = resolve_image_path(image)
         replacement = (
             f'<figure class="fullwidth">'
             f'<img src="{image}" alt="{caption}"/>'
@@ -264,9 +297,8 @@ def process_maincolumn(text):
     for full_match, args, start, end in reversed(matches):
         image = args[0]
         caption = render_markdown(args[1])
-        # Handle relative paths
-        if not image.startswith(('http://', 'https://', '/')):
-            image = '/' + image
+        # Resolve image path (supports co-located assets)
+        image = resolve_image_path(image)
         replacement = (
             f'<figure>'
             f'<img src="{image}" alt="{caption}"/>'
@@ -288,9 +320,8 @@ def process_marginfigure(text):
         fig_id = args[0]
         image = args[1]
         caption = render_markdown(args[2])
-        # Handle relative paths
-        if not image.startswith(('http://', 'https://', '/')):
-            image = '/' + image
+        # Resolve image path (supports co-located assets)
+        image = resolve_image_path(image)
         replacement = (
             f'<label for="{fig_id}" class="margin-toggle">⊕</label>'
             f'<input type="checkbox" id="{fig_id}" class="margin-toggle"/>'

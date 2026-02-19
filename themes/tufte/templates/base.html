@@ -63,7 +63,7 @@
                 {% for topic_name, topic_slug in TOPICS %}
                 <li><a href="{{ SITEURL }}/{{ topic_slug }}/">{{ topic_name }}</a></li>
                 {% endfor %}
-                {% set page_order_end = ['About', 'Colophon'] %}
+                {% set page_order_end = ['About'] %}
                 {% for page_title in page_order_end %}
                     {% for page in pages %}
                         {% if page.title == page_title %}

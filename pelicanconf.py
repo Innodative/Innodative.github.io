@@ -30,7 +30,8 @@ THEME = 'themes/tufte'
 DEFAULT_PAGINATION = 10
 
 # Static paths
-STATIC_PATHS = ['images', 'extra']
+# Static paths — includes category dirs so co-located images are copied to output
+STATIC_PATHS = ['images', 'extra', 'thoughts', 'howtos', 'notebook']
 EXTRA_PATH_METADATA = {
     'extra/.nojekyll': {'path': '.nojekyll'},
     'extra/CNAME': {'path': 'CNAME'},
@@ -60,18 +61,28 @@ DISPLAY_CATEGORIES_ON_MENU = False
 TOPICS = [
     ('Thoughts', 'thoughts'),
     ('HowTos', 'howtos'),
+    ('Notebook', 'notebook'),
 ]
+
+# Use explicit Category in frontmatter, not folder names
+USE_FOLDER_AS_CATEGORY = False
 
 # Default category for articles without one specified
 DEFAULT_CATEGORY = 'uncategorized'
 
 # Markdown extensions for sidenotes
+from pymdownx import emoji as pymdownx_emoji
+
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.toc': {
             'title': 'Contents',
+        },
+        'pymdownx.emoji': {
+            'emoji_index': pymdownx_emoji.twemoji,
+            'emoji_generator': pymdownx_emoji.to_alt,
         },
     },
     'output_format': 'html5',

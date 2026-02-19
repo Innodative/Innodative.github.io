@@ -135,7 +135,7 @@ didn't realize an avatar was being used, and some claimed they knew all
 along.
 
 Eventually, students christened the avatar "Professor Robert Burgundy"{%
-marginfigure "mf-burgundy" "/images/thoughts/professor-burgundy.png"
+marginfigure "mf-burgundy" "professor-burgundy.png"
 "Student-created image of Professor Robert Burgundy. I liked the student's 
 work so much I made it my course avatar on Canvas."
 %} after Ron Burgundy from the movie *Anchorman*{% marginnote

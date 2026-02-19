@@ -17,18 +17,18 @@ To demonstrate this, I will use the Safari browser on my Mac.
 I recently came across an annual review of the [Chinese public's use and views on generative artificial intelligence](https://mp.weixin.qq.com/s/3cu-C8L6eDewRHT-IjzBEg?utm_source=substack&utm_medium=email&poc_token=HJzy7GijC72zwYXC4PLmky83en6Mjq0ddUQ1TFjl) from Tencent Research Institute.
 As you can see from the screenshot of the original webpage, everything is in Mandarin—a language I neither speak nor read.
 
-{% maincolumn "images/howto/translation-original-mandarin.png" "The original webpage displayed entirely in Mandarin Chinese" %}
+{% maincolumn "translation-original-mandarin.png" "The original webpage displayed entirely in Mandarin Chinese" %}
 
 The Safari browser provides a translate button in the address 
-bar{% marginfigure "mf-translate" "images/howto/translation-button-use.png" "The translate button showing the option to translate the webpage into English." %} 
+bar{% marginfigure "mf-translate" "translation-button-use.png" "The translate button showing the option to translate the webpage into English." %} 
 when it detects a webpage in a foreign language. Simply clicking this button creates a new view of the 
 webpage that is translated into your preferred language. In my case, that is English.
 
-{% maincolumn "images/howto/translation-english.png" "The same webpage after translation, now displaying in English" %}
+{% maincolumn "translation-english.png" "The same webpage after translation, now displaying in English" %}
 
 After a brief period where the translation is performed, the new view is displayed. While the translation of plain text is no longer seen as a magical feature, I was definitely impressed by the automatic translation of text in figures and infographics. As you can see in the following figure, at least for Safari, this in situ translation places boxes over the original text and then displays the translation in these boxes.
 
-{% maincolumn "images/howto/translation-infographic.png" "Even complex infographics are translated, with text overlays rendered in the target language" %}
+{% maincolumn "translation-infographic.png" "Even complex infographics are translated, with text overlays rendered in the target language" %}
 
 The ability to translate not just the body text but also embedded graphics demonstrates how far browser-based translation technology has advanced. This makes previously inaccessible content immediately readable and useful for research, business intelligence, or simple curiosity about global developments.
 
@@ -37,7 +37,7 @@ The ability to translate not just the body text but also embedded graphics demon
 For those who want to use this feature:
 
 1. Open Safari and navigate to a webpage in a foreign language.
-2. Look for the translation icon{% marginfigure "mf-translate-button" "images/howto/translation-button.png" "The translate button appears in Safari's address bar when a foreign language is detected" %} in the address bar.
+2. Look for the translation icon{% marginfigure "mf-translate-button" "translation-button.png" "The translate button appears in Safari's address bar when a foreign language is detected" %} in the address bar.
 3. Click the icon and select your preferred language.
 4. Safari will translate the page automatically.
 

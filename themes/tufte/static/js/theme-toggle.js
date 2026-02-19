@@ -1,7 +1,9 @@
 // Dark mode toggle functionality
 (function() {
     // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches; 
+    const currentTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+
     document.documentElement.setAttribute('data-theme', currentTheme);
 
     // Wait for DOM to load

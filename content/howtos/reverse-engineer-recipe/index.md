@@ -26,7 +26,7 @@ farmer’s market—and wondered how to recreate it yourself? All I had was
 a picture of the cinnamon roll with the list of ingredients printed on a
 sticky label.
 
-{% marginfigure "mf-ingredients" "images/howto/cin-roll.png" "A cell
+{% marginfigure "mf-ingredients" "cin-roll.png" "A cell
 phone picture showing the list of ingredients from the cinnamon roll."
 %}
 
@@ -108,5 +108,5 @@ these AI-powered cinnamon rolls soon, for now I just ask the original
 creator for a few extra ones on the side. 🙂
 
 If you'd like to try it yourself, here is the full [generated
-recipe](/images/howto/cin-roll-recipe.pdf) from ChatGPT. If you do bake it, be
+recipe]({attach}cin-roll-recipe.pdf) from ChatGPT. If you do bake it, be
 sure to enjoy one for me!
