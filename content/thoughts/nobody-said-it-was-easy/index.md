@@ -15,9 +15,7 @@ different modules. And students wanted more technical depth, not less.
 We designed and built the course two years ago. Now, generative AI
 barely resembles what it looked like then. A refresh is clearly needed,
 but how and what? I was reminded of a line from the Coldplay song, *The
-Scientist*: "Nobody said it was easy."{% marginvideo "mv-coldplay"
-"RB-RcX5DS5A" "Coldplay — *The Scientist* (Official 4K Video, 2002). The
-reverse-narrative video is worth watching on its own terms." %}
+Scientist*: "Nobody said it was easy."{% marginnote "mn-coldplay" "Coldplay — <a href='https://www.youtube.com/watch?v=RB-RcX5DS5A'><em>The Scientist</em></a> (2002). The reverse-narrative video is worth watching on its own terms." %}
 
 Yet, as I thought about how AI has changed over the last few years and
 the current course structure, I was reminded of the next line in that
@@ -176,8 +174,7 @@ orders also pair naturally with avatar-generated video for surgical
 updates. Need to update a single case study? Re-script and regenerate
 just that segment. No studio booking, no faculty scheduling. I've
 written about this in my [I still haven't found what I'm looking
-for](https://innodative.com/posts/i-still-havent-found-what-im-looking-
-for/) thought piece." %}
+for](https://innodative.com/posts/i-still-havent-found/) thought piece." %}
 
 ## The Broader Point
 
