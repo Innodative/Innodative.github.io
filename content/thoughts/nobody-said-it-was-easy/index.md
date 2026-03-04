@@ -1,12 +1,12 @@
-Title: How I Used AI to Scope a Course Revision in Two Hours
+Title: Nobody Said It Was Easy
 Date: 2026-03-04
 Category: Thoughts
 Tags: AI, Teaching, Higher Education, Course Design
 Summary: Eight modules, 120 videos, a rapidly changing field, and student feedback pulling in different directions. I ran an experiment — an extended conversation with Claude — to scope a full course revision. Here's what happened, and what it might mean for how teaching and learning teams work.
-Status: hidden
+Status: published
 
 {% newthought "I may be biased," %} but I think my AI for Business
-course is a good course in our online portfolio. We average around 400
+course is a good course in our online portfolio. We average close to 400
 students every semester, outcomes look solid, and evaluations are
 positive overall. But those same evaluations highlighted some real
 issues. Several videos felt repetitive. Ethics content showed up in four
