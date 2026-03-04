@@ -3,7 +3,7 @@ Date: 2026-03-04
 Category: Thoughts
 Tags: AI, Teaching, Higher Education, Course Design
 Summary: Eight modules, 120 videos, a rapidly changing field, and student feedback pulling in different directions. I ran an experiment — an extended conversation with Claude — to scope a full course revision. Here's what happened, and what it might mean for how teaching and learning teams work.
-Status: draft
+Status: hidden
 
 {% newthought "I may be biased," %} but I think my AI for Business
 course is a good course in our online portfolio. We average around 400
