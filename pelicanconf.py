@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-AUTHOR = 'Your Name'
+AUTHOR = 'Robert J. Brunner'
 SITENAME = 'The Innodative Disruptor'
 SITEURL = ''
 
@@ -9,7 +9,7 @@ SITEURL = ''
 GOOGLE_ANALYTICS = 'G-Y2E20JE6P5'
 
 PATH = 'content'
-TIMEZONE = 'America/Chicago'
+TIMEZONE = 'America/Indiana/Indianapolis'
 DEFAULT_LANG = 'en'
 
 # Plugin settings
@@ -29,6 +29,7 @@ THEME = 'themes/tufte'
 # Pagination
 DEFAULT_PAGINATION = 10
 
+ARTICLE_PATHS = ['thoughts', 'howtos', 'notebook']
 # Static paths
 # Static paths — includes category dirs so co-located images are copied to output
 STATIC_PATHS = ['images', 'extra', 'thoughts', 'howtos', 'notebook']
@@ -77,6 +78,7 @@ MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
+        'markdown.extensions.smarty': {},
         'markdown.extensions.toc': {
             'title': 'Contents',
         },
