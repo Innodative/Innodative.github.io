@@ -67,6 +67,15 @@ def process_tufte_tags(content):
     
     text = content._content
     
+   # Smarty converts straight quotes to HTML entities inside our tags.
+    # Convert the entity quotes back to Unicode chars so 
+    # extract_quoted_string can find them.
+    text = (text
+            .replace('&ldquo;', '\u201c')
+            .replace('&rdquo;', '\u201d')
+            .replace('&lsquo;', '\u2018')
+            .replace('&rsquo;', '\u2019'))
+    
     # Process each tag type
     text = process_sidenotes(text)
     text = process_marginnotes(text)
