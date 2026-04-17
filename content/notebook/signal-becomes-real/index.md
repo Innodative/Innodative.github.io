@@ -27,6 +27,7 @@ elite ones, has been the networking and the recruiting pipeline. You go
 to a top school not just for the education but because that's where the
 employers go to hire. Sal Khan himself said it plainly: "McKinsey
 recruits at Harvard, and they don't recruit at my state university."
+{% sidenote "sn-khan" "Sal Khan, speaking at Charter's Leading with AI Summit, February 24, 2026. Reported in [Sal Khan's Vision for the Future of Education](https://time.com/charter/7381754/sal-khans-vision-for-the-future-of-education/), *Time*, March 2026." %}
 
 The Khan TED Institute looks like a credible attempt to build that
 pipeline from scratch, outside the traditional system entirely.
