@@ -5,8 +5,8 @@ Tags: higher-education, disruption, ai
 Slug: a-signal-becomes-real 
 Summary: A new disruptive innovator impacting higher education?
 
-{% newthought A major part of my job as Chief Disruption Officer is to watch for
-signals %}, early indicators that something is shifting in ways that could
+{% newthought "A major part of my job as Chief Disruption Officer is to watch for
+signals" %}, early indicators that something is shifting in ways that could
 matter to higher education and business. For years, I've discussed
 potential threats with deans to the traditional higher ed model. Mostly
 these conversations were couched in maybes. The technology isn't ready,
