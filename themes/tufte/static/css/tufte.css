@@ -14,6 +14,9 @@
     --sidenote-color: #666666;
     --code-bg: #f4f4ef;
     --blockquote-border: #999999;
+    --draft-banner-bg: #faf3e0;
+    --draft-banner-border: #c9a64a;
+    --draft-banner-text: #6b5317;
 }
 
 [data-theme="dark"] {
@@ -28,6 +31,9 @@
     --sidenote-color: #aaaaaa;
     --code-bg: #2a2a2a;
     --blockquote-border: #666666;
+    --draft-banner-bg: #2e2817;
+    --draft-banner-border: #8a6f2a;
+    --draft-banner-text: #d9c17d;
 }
 
 /* Smooth transition when switching themes */
@@ -1115,4 +1121,21 @@ figure.fullwidth .responsive-video {
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
+}
+
+/* Draft banner — shown only on individual article pages with Draft: true */
+.draft-banner {
+    background-color: var(--draft-banner-bg);
+    border-left: 3px solid var(--draft-banner-border);
+    color: var(--draft-banner-text);
+    padding: 0.75rem 1.1rem;
+    margin: 1.5rem 0 2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+
+.draft-banner strong {
+    color: var(--draft-banner-text);
+    font-weight: 600;
 }
