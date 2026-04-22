@@ -1,0 +1,22 @@
+Title: Who Pays for Open Weights?
+Date: 2026-04-19
+Draft: true
+Modified: 2026-04-23
+Category: Notebook
+Tags: ai, open-source, china, economics
+Slug: who-pays-for-open-weights
+Summary: The golden age of free Chinese frontier models is ending. A note on why, and who fills the gap.
+
+Frontier AI models cost money to train. Someone has to pay for the compute, the researchers, the data. For the past year and a half, a puzzle has hung over the industry: why were Chinese labs releasing frontier-tier open weights for free? I've been one of the beneficiaries, running Qwen and DeepSeek locally on my Mac Studio for work where I want privacy or throughput.
+
+This month the puzzle started resolving. The short answer is that they aren't anymore.
+
+Alibaba released Qwen3.6-Plus as a closed hosted offering on Alibaba Cloud, keeping only its smaller models (35B and below) as open weights, now positioned as a developer acquisition funnel rather than a frontier release. {% sidenote "alibaba-selective" "*The Information*, 'Alibaba Becomes Selective with Open-Source Models, New Release Shows,' April 2026." %} Z.ai rolled out GLM-5-Turbo closed. DeepSeek, famously self-funded by the hedge fund High-Flyer Capital and known for turning down outside money, is now seeking $300M or more at a $10B valuation, citing researcher departures. {% sidenote "deepseek-raising" "*The Information*, 'China's DeepSeek is Raising Money for First Time,' April 17, 2026." %} ByteDance's Seedance 2.0 and Kuaishou's Kling 3.0 are both proprietary from the start.
+
+A recent [ChinaTalk analysis](https://www.chinatalk.media/p/chinas-ai-companies-are-going-closed) lays out the underlying economics. Chinese labs need revenue, and the DeepSeek shock got open source "a moment" rather than a sustainable business model. The funding environment for Chinese AI is orders of magnitude smaller than America's. Gulf capital put roughly $100M into Chinese labs while pouring roughly $15B into Anthropic and OpenAI, and Western venture money is almost exclusively American. US export controls have tightened steadily, narrowing access to the chips Chinese labs need to train at frontier scale, which means every training run costs more than it does for a US competitor. The Chinese government has been willing to subsidize domestic hardware but not open model development, and domestic chips still trail NVIDIA by a meaningful gap.
+
+Several other pressures compound the squeeze. American labs have [documented large-scale adversarial distillation](https://www.justsecurity.org) from Chinese labs going back to 2024 and are actively closing that channel through the Frontier Model Forum. Every Chinese model still has to pass a post-training alignment layer for CCP compliance, a tax Western labs don't pay. And Alibaba's own Qwen technical lead recently put the odds of a Chinese firm surpassing US tech giants in three to five years at under 20 percent.
+
+Not every Chinese lab is making the same bet. This week Moonshot AI open-sourced Kimi K2.6, an open-weights release that reportedly matches or beats frontier models on coding and agentic benchmarks. That reads as a counterexample until you read it as a smaller firm finding a niche. Moonshot doesn't have the capital to fund closed-model infrastructure and enterprise sales at the scale Alibaba or ByteDance can. If the larger Chinese labs are all closing their frontier weights, the open lane gets less crowded, and a strong open-weights release captures developer mindshare the bigger players are walking away from. The logic holds even when the model doesn't quite match the frontier, which is what makes this a viable long-term strategy for Moonshot and not for the top of the market.
+
+The open-weight ecosystem itself will survive. NVIDIA has committed $26 billion over five years to the Nemotron family. Meta continues Llama. Google has Gemma. The Allen Institute keeps pushing OLMo and Tülu forward. But the providers are changing, and the incentive is changing with them. The generous era of Chinese frontier labs releasing weights for mindshare is ending. What replaces it is American hardware and platform companies using open models to sell chips and cloud services, and a smaller set of Chinese labs like Moonshot using open weights as a niche strategy. The models I run locally today will keep working. The next generation of frontier-tier open weights will increasingly come from a different set of addresses.
