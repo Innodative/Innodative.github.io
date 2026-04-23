@@ -32,7 +32,7 @@ DEFAULT_PAGINATION = 10
 ARTICLE_PATHS = ['thoughts', 'howtos', 'notebook']
 # Static paths
 # Static paths — includes category dirs so co-located images are copied to output
-STATIC_PATHS = ['images', 'extra', 'thoughts', 'howtos', 'notebook']
+STATIC_PATHS = ['images', 'tools', 'extra', 'thoughts', 'howtos', 'notebook']
 EXTRA_PATH_METADATA = {
     'extra/.nojekyll': {'path': '.nojekyll'},
     'extra/CNAME': {'path': 'CNAME'},
