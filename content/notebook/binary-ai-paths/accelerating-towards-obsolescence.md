@@ -7,7 +7,7 @@ Summary: Fields confronting AI tend to see two paths: ban it or delegate to it. 
 
 {% newthought "Your ethics are your ethics." %}
 
-The line hit me hard. I had been describing how I use AI in my work, the actual mechanics of it, what I hand off and what I keep, where the tool helps and where it gets in the way. And this was the response. Ambiguous. Foreboding. Confusing.
+The line hit me hard. I had been describing how I use AI in my work, the actual mechanics of it, what I hand off and what I keep, where the tool helps and where it gets in the way. And this was the response. It was ambiguous, foreboding, confusing.
 
 Why is my use of AI being framed as an ethical position in the first place? Not a methodological choice, not a workflow decision, not a question of craft. An ethical one. With the implication, sitting just under the surface, that a verdict is pending and the wrong answer, whatever that is, has consequences.
 
