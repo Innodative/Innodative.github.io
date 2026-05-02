@@ -52,3 +52,7 @@ I don't minimize what's coming. Workers in routine, AI-exposed roles will face r
 AI capability remains narrow. Demand expands as costs fall. Infrastructure limits the pace of deployment. Pricing reveals the continued centrality of human judgment. And as long as compute is costly, human roles will persist.
 
 We are not heading toward a world without work. We are heading toward a world with different work. The sooner we understand that, the better prepared we will be.
+
+---
+
+This article was developed with AI assistance for research, outlining, drafting, and editing. All ideas, experiences, and perspectives are my own.
