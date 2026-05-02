@@ -66,3 +66,7 @@ What is left is the field, undefended, with practitioners who refused to engage 
 This is the pattern I keep seeing. Professions whose job is to interpret the world for everyone else flinching at the moment they should be leaning in. Treating the most important tool of their working lives as an ethical hazard rather than a skill to develop. Building moats out of moral language and watching the moats dissolve.
 
 Your ethics are your ethics. Fine, I get it. But the corollary is your field is your field. And the question is not whether you approve, but whether you cling to the past or lead the way forward.
+
+---
+
+This article was developed with AI assistance for research, outlining, drafting, and editing. All ideas, experiences, and perspectives are my own.
