@@ -1,8 +1,9 @@
 Title: The Economics of AI Anxiety
-Date: 2026-05-01
+Date: 2026-04-24
+Modified: 2026-05-03
 Category: Thoughts
 Tags: AI, Labor Market, Economics, Future of Work
-Slug: dont-panic
+Slug: economics-of-ai-anxiety
 Summary: Anxiety about AI-driven job cuts is everywhere, but badly misdiagnosed. The labor market is absorbing AI through task-level substitution, and three economic constraints ensure that human roles will persist.
 
 {% newthought "Anxiety about AI-driven job cuts" %} is everywhere, but badly misdiagnosed.
