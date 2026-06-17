@@ -1,7 +1,7 @@
 Title: About
 Slug: about
 
-{% newthought "I help" %} boards, entrepreneurs, and leaders separate AI signal from noise. Trained as an astrophysicist, I now work where deep technical evaluation meets business judgment.
+{% newthought "I help boards, entrepreneurs, and leaders" %} separate AI signal from noise. Trained as an astrophysicist, I now work where deep technical evaluation meets business judgment.
 
 ## Background
 
