@@ -1,15 +1,15 @@
 Title: About
 Slug: about
 
-{% newthought "I'm a futurist" %}, technologist, and educator who helps organizations navigate the intersection of emerging technologies and business transformation.
+{% newthought "I help" %} boards, entrepreneurs, and leaders separate AI signal from noise. Trained as an astrophysicist, I now work where deep technical evaluation meets business judgment.
 
 ## Background
 
-I'm currently Chief Disruption Officer and Professor of Accountancy at the Gies College of Business, University of Illinois at Urbana-Champaign, where I also serve as Arthur Andersen Fellow. I'm also Founder and Principal of Innodative, a leading technology consultancy. My somewhat unconventional path—from astrophysics to data science to business education—reflects a consistent focus on extracting insights from complex systems and translating technical capabilities into practical applications.
+I'm currently Chief Disruption Officer and Professor of Accountancy at the Gies College of Business, University of Illinois at Urbana-Champaign, where I also serve as Arthur Andersen Fellow. My somewhat unconventional path—from astrophysics to data science to business school—reflects a consistent focus on extracting insights from complex systems and translating technical capabilities into practical applications.
 
 My work focuses on emerging technologies and how they are impacting business and society, with particular emphasis on artificial intelligence, data science, and their applications to accounting and finance. I enjoy bringing these insights into the classroom, where I work with both undergraduate and graduate students to explore how technology is reshaping the business landscape. I bring an interdisciplinary perspective shaped by a Ph.D. in Astrophysics from Johns Hopkins and postgraduate work at the California Institute of Technology, followed by two decades applying computational methods to complex systems—from cosmological datasets to financial markets.
 
-I am Founder and Principal of Innodative, a technology consultancy that helps organizations navigate digital transformation and leverage emerging technologies for strategic advantage. Through Innodative, I work with businesses to develop AI strategies, implement data science solutions, and build capabilities in emerging technologies.
+I am Founder and Principal of Innodative, a technology consultancy that helps organizations navigate disruption and separate AI signal from noise. Through Innodative, I work with businesses and entrepreneurs to develop AI strategies, implement data science solutions, and build capabilities in emerging technologies.
 
 ## Career Trajectory
 
