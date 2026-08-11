@@ -12,7 +12,7 @@ Applying multimodal deep learning to earnings calls analysis, graph neural netwo
 Developed breakthrough techniques including the Extended Isolation Forest algorithm for anomaly detection,{% sidenote "sn-eif-area" "[EIF GitHub](https://github.com/sahandha/eif)" %} ensemble machine learning methods using random forests and self-organizing maps,{% sidenote "sn-som" "[SOM GitHub](https://github.com/lcdm-uiuc/somsphere)" %} deep convolutional neural networks for classification tasks, sparse representation techniques for probability density functions,{% sidenote "sn-sparse" "[SparsePz GitHub](https://github.com/lcdm-uiuc/SparsePz)" %} and information-theoretic measures.{% sidenote "sn-pyif" "[PyIF GitHub](https://github.com/lcdm-uiuc/PyIF)" %}
 
 **Astrophysics & Computational Cosmology (1997-2017)**  
-Twenty years developing machine learning methods for massive astronomical datasets. Co-founded the Dark Energy Survey, pioneered GPU applications in cosmology, and created algorithms for photometric redshift estimation and star-galaxy classification.{% sidenote "sn-acm" "Received the 2021 ACM SIGMOD Systems Award for contributions to the Sloan Digital Sky Survey—one of the most prestigious recognitions in database systems." %}
+Twenty years developing machine learning methods for massive astronomical datasets. Co-founded the Dark Energy Survey, pioneered GPU applications in cosmology, and created algorithms for photometric redshift estimation and star-galaxy classification.{% sidenote "sn-acm" "Received the 2021 ACM SIGMOD Systems Award for contributions to the Sloan Digital Sky Survey." %}
 
 <p class="section-links">
 <a href="/publications/">Working papers and selected publications &rarr;</a>

@@ -952,63 +952,30 @@ article p.proof {
     color: var(--text-color-light);
 }
 
-/* Scrolling client strip (Advisory page) */
-.client-marquee {
+/* Static client strip (Advisory page) */
+.client-strip {
     width: clamp(600px, 55vw, 900px);
-    overflow: hidden;
-    margin: 2rem 0 2.5rem 0;
-    padding: 0.75rem 0;
+    margin: 1.5rem 0 2.5rem 0;
+    padding: 1rem 0;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-}
-
-.client-track {
     display: flex;
-    width: max-content;
-    animation: client-scroll 110s linear infinite;
+    flex-wrap: wrap;
+    gap: 0.75rem 2.5rem;
+    box-sizing: border-box;
 }
 
-.client-marquee:hover .client-track {
-    animation-play-state: paused;
-}
-
-.client-set {
-    display: flex;
-    gap: 3rem;
-    padding-right: 3rem;
-    white-space: nowrap;
-}
-
-.client-set > span {
+.client-strip > span {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-color-muted);
-}
-
-@keyframes client-scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .client-track {
-        animation: none;
-        width: auto;
-        flex-wrap: wrap;
-    }
-    .client-set[aria-hidden="true"] {
-        display: none;
-    }
-    .client-set {
-        flex-wrap: wrap;
-        row-gap: 0.75rem;
-    }
+    white-space: nowrap;
 }
 
 @media (max-width: 1000px) {
-    .client-marquee {
+    .client-strip {
         width: 100%;
         max-width: 100%;
     }

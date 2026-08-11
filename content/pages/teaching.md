@@ -7,7 +7,7 @@ Slug: teaching
 
 I bring an interdisciplinary perspective to the classroom, connecting insights from astrophysics, data science, and business analytics. Whether working with undergraduates or graduate students, I emphasize building intuition through hands-on experience with real-world problems.{% sidenote "sn-teaching" "Multiple-time recipient of the 'Incomplete List of Teachers Rated as Excellent by Their Students' award." %}
 
-My courses explore how artificial intelligence, machine learning, and distributed technologies are reshaping business—from financial reporting to strategic decision-making. I pioneered AI-driven instruction by creating multilingual avatar-based course delivery.
+My courses explore how artificial intelligence, machine learning, and distributed technologies are reshaping business—from financial reporting to strategic decision-making. I created multilingual avatar-based course delivery for AI-driven instruction.
 
 ## Current Courses
 
