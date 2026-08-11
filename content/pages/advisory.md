@@ -1,7 +1,7 @@
 Title: Advisory
 Slug: advisory
 
-Through my consulting practice, **Innodative**, I advise boards, leadership teams, and founders on artificial intelligence and emerging technology: separating genuine capability from hype, and deciding what to do about it. Three decades of applying computational methods to hard problems — from cosmological surveys to financial markets — now brought to the decisions organizations actually face.
+Through my consulting practice, **Innodative**, I advise boards, leadership teams, and founders on artificial intelligence and emerging technology: separating genuine capability from hype, and deciding what to do about it. Three decades of applying computational methods to hard problems, from cosmological surveys to financial markets, now brought to the decisions organizations actually face.
 
 ## Philosophy
 
@@ -29,13 +29,13 @@ Astrophysicist by training (Ph.D., Johns Hopkins; Caltech), with more than 150 p
 
 ## Selected Engagements
 
-**Diversified industrial holding company** — Presented AI and its business implications to the presidents of every operating unit.
+**Diversified industrial holding company:** Presented AI and its business implications to the presidents of every operating unit.
 
-**Education-technology company** — Demonstrated AI avatar technology, then guided the team through creating and deploying their own avatars.
+**Education-technology company:** Demonstrated AI avatar technology, then guided the team through creating and deploying their own avatars.
 
-**Energy utility** — Guided machine learning applications that improved sustainability and reduced energy use.
+**Energy utility:** Guided machine learning applications that improved sustainability and reduced energy use.
 
-**National organization serving older adults** — Guided machine learning applications in support of its members.
+**National organization serving older adults:** Guided machine learning applications in support of its members.
 
 ## Selected Organizations
 

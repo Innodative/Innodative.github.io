@@ -17,7 +17,7 @@ Led the Illinois Data Science Initiative, bringing together 40+ faculty and staf
 
 Twenty years developing machine learning methods for massive astronomical datasets. Co-founded the Dark Energy Survey and led early GPU applications in cosmology. Received the 2021 ACM SIGMOD Systems Award for contributions to the Sloan Digital Sky Survey. Mentored over 100 students who went on to Google, NASA, national labs, and leading universities. Ph.D. in Astrophysics, Johns Hopkins; postdoctoral work at Caltech.
 
-The full academic record — publications, teaching, and media coverage — is collected under <a href="/academia/">Academia</a>.
+The full academic record of publications, teaching, and media coverage is collected under <a href="/academia/">Academia</a>.
 
 ## Contact
 
