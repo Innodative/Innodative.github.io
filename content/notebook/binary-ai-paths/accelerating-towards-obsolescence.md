@@ -2,7 +2,6 @@ Title: Accelerating towards Obsolescence
 Date: 2026-05-01
 Category: Notebook 
 Slug: accelerating-towards-obsolescence
-Draft: true
 Summary: Fields confronting AI tend to see two paths: ban it or delegate to it. Both fail. The third option is harder to articulate and the only one that works.
 
 {% newthought "Your ethics are your ethics." %}

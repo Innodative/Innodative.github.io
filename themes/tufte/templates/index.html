@@ -58,8 +58,9 @@
     <section class="recent-posts">
         <h2>Recent Writing</h2>
         
-        {% set visible_articles = articles|selectattr('status', 'ne', 'hidden')|list %}
-        {% for article in visible_articles[:5] %}
+        {% set visible_articles = [] %}
+        {% for a in articles if a.status != 'hidden' and not (a.draft and a.draft|string|lower == 'true') %}{% set _ = visible_articles.append(a) %}{% endfor %}
+        {% for article in visible_articles[:3] %}
         <article class="post-preview">
             <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
             <p class="post-meta">{{ article.locale_date }} • {{ article.category }}</p>

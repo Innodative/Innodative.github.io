@@ -3,6 +3,16 @@ Slug: advisory
 
 Through my consulting practice, **Innodative**, I advise boards, leadership teams, and founders on artificial intelligence and emerging technology: separating genuine capability from hype, and deciding what to do about it. Three decades of applying computational methods to hard problems, from cosmological surveys to financial markets, now brought to the decisions organizations actually face.
 
+## Decisions I Help Leaders Make
+
+**Where AI is actually useful:** which capabilities matter for your business, and which are mostly noise.
+
+**What to build, buy, or wait on:** evaluating vendors, models, and internal capability against what the technology can really do.
+
+**What the board needs to understand:** the strategic, financial, operational, and governance implications of adopting these tools.
+
+**Where AI does not belong:** recognizing when the costs and risks outweigh the return, and saying so.
+
 ## Philosophy
 
 Effective technology advice begins with business problems, not technology solutions. The question is never whether to adopt AI. It is what specific problems these tools might solve, and whether the solutions justify the costs and risks. The goal is not to recommend technology; it is to help leaders decide where it belongs.
@@ -27,15 +37,23 @@ Tailored sessions for boards, leadership teams, and professional audiences. Ever
 Astrophysicist by training (Ph.D., Johns Hopkins; Caltech), with more than 150 published articles spanning astrophysics, data science, and business analytics. Chief Disruption Officer and Professor of Accountancy at the Gies College of Business, University of Illinois. Recipient of the 2021 ACM SIGMOD Systems Award for contributions to the Sloan Digital Sky Survey. Member of the CNBC Disruptor 50 Academic Advisory Board. The full record is on the <a href="/about/">About</a> page.
 </p>
 
+<p class="section-links">
+In the press: <a href="https://poetsandquants.com/2023/11/01/innovation-using-faculty-avatars-ai-in-an-mba-classroom/">Poets&amp;Quants</a> &nbsp;&middot;&nbsp;
+<a href="https://www.cnbc.com/robert-brunner2024-disruptor-50-academic-advisory-board/">CNBC</a> &nbsp;&middot;&nbsp;
+<a href="https://www.aacsb.edu/insights/articles/2023/11/implementing-ai-technology-in-business-education">AACSB Insights</a>
+</p>
+
 ## Selected Engagements
 
-**Diversified industrial holding company:** Presented AI and its business implications to the presidents of every operating unit.
+**University of Illinois Research Park, multi-year:** Served for several years as data science advisor to both the Research Park and its member companies, helping corporate innovation teams take machine learning applications from idea to working practice, mentoring the analysts and interns who built them, and helping organize and run the Park’s Big Data Summit.
 
-**Education-technology company:** Demonstrated AI avatar technology, then guided the team through creating and deploying their own avatars.
+**Diversified industrial holding company:** Briefed the presidents of every operating unit on AI and its business implications, establishing a common baseline for technology decisions across the portfolio.
 
-**Energy utility:** Guided machine learning applications that improved sustainability and reduced energy use.
+**Energy utility:** Advised the innovation team on machine learning applications, with results that improved sustainability and reduced energy use.
 
-**National organization serving older adults:** Guided machine learning applications in support of its members.
+**National organization serving older adults:** Guided the innovation lab's machine learning work in support of its members; the team went on to demonstrate its work at CES.
+
+**Education-technology company:** Took the team from a first demonstration of AI avatars to building and deploying their own.
 
 ## Selected Organizations
 
