@@ -8,8 +8,8 @@
     --text-color: #333333;
     --text-color-light: #555555;
     --text-color-muted: #777777;
-    --link-color: #444444;
-    --link-hover-color: #111111;
+    --link-color: #3d5a73;
+    --link-hover-color: #1f3648;
     --border-color: #cccccc;
     --sidenote-color: #666666;
     --code-bg: #f4f4ef;
@@ -17,6 +17,8 @@
     --draft-banner-bg: #faf3e0;
     --draft-banner-border: #c9a64a;
     --draft-banner-text: #6b5317;
+    --fig-muted: #b9b9ad;
+    --fig-accent: #8a2d2b;
 }
 
 [data-theme="dark"] {
@@ -25,8 +27,8 @@
     --text-color: #e0e0e0;
     --text-color-light: #c0c0c0;
     --text-color-muted: #999999;
-    --link-color: #b0b0b0;
-    --link-hover-color: #ffffff;
+    --link-color: #8fb0c9;
+    --link-hover-color: #c8dcec;
     --border-color: #444444;
     --sidenote-color: #aaaaaa;
     --code-bg: #2a2a2a;
@@ -34,6 +36,8 @@
     --draft-banner-bg: #2e2817;
     --draft-banner-border: #8a6f2a;
     --draft-banner-text: #d9c17d;
+    --fig-muted: #85857c;
+    --fig-accent: #c0716c;
 }
 
 /* Smooth transition when switching themes */
@@ -254,8 +258,6 @@ label.sidenote-number {
     display: inline;
     cursor: pointer;
     white-space: nowrap;
-}
-    max-height: 2rem;
 }
 
 label.margin-toggle:not(.sidenote-number) {
@@ -515,6 +517,30 @@ nav ul li a:hover {
     color: var(--text-color-light);
 }
 
+/* Writing landing page filter links */
+.filter-links {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 2.5rem 0;
+}
+
+.filter-links a {
+    border-bottom: none;
+    color: var(--text-color-muted);
+}
+
+.filter-links a:hover,
+.filter-links a.current {
+    color: var(--text-color);
+}
+
+/* Category label above titles in the combined article list */
+.article-list .category-label {
+    margin-bottom: 0.2rem;
+}
+
 /* Article metadata */
 .article-meta {
     font-family: 'Source Sans Pro', sans-serif;
@@ -696,8 +722,60 @@ footer.site-footer {
     margin: 2rem 0;
 }
 
+/* Theme-aware inline figures (First Principles fan diagram) */
+.fig-fan svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fig-fan .ax,
+.fig-fan .series {
+    stroke: var(--text-color);
+}
+
+.fig-fan .grid {
+    stroke: var(--border-color);
+}
+
+.fig-fan .lbl {
+    fill: var(--text-color-muted);
+}
+
+.fig-fan .lbl-strong {
+    fill: var(--text-color);
+}
+
+.fig-fan .fan-g-fill {
+    fill: var(--fig-muted);
+}
+
+.fig-fan .fan-g-line {
+    stroke: var(--fig-muted);
+}
+
+.fig-fan .fan-a-fill {
+    fill: var(--fig-accent);
+}
+
+.fig-fan .fan-a-line {
+    stroke: var(--fig-accent);
+}
+
+.fig-fan .lbl-accent {
+    fill: var(--fig-accent);
+}
+
+/* Category-style pages rendered via page.html (Notebook, HowTos):
+   match section's 1rem top padding so the title lines up with
+   /writing/ and /thoughts/ */
+article.category-page {
+    padding-top: 1rem;
+}
+
 /* Category page title styling */
-section > h1 {
+section > h1,
+h1.category-title {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-color);
@@ -828,13 +906,155 @@ section > h2:first-of-type {
 
 /* Bio section */
 .homepage .bio {
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 0 0;
 }
 
 .homepage .bio p {
     font-size: 1.3rem;
     line-height: 1.65;
     margin-bottom: 1rem;
+}
+
+/* Advisory pointer block */
+.advisory-note {
+    margin: 2.5rem 0 3rem 0;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--bg-color-alt);
+    border-left: 3px solid var(--blockquote-border);
+}
+
+.advisory-note p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Engagement note block (Advisory page) */
+.engagement-note {
+    width: clamp(600px, 55vw, 900px);
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--bg-color-alt);
+    border-left: 3px solid var(--blockquote-border);
+    box-sizing: border-box;
+}
+
+.engagement-note p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+/* Proof paragraph (Advisory page "Why Me") */
+article p.proof {
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+}
+
+/* Scrolling client strip (Advisory page) */
+.client-marquee {
+    width: clamp(600px, 55vw, 900px);
+    overflow: hidden;
+    margin: 2rem 0 2.5rem 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.client-track {
+    display: flex;
+    width: max-content;
+    animation: client-scroll 110s linear infinite;
+}
+
+.client-marquee:hover .client-track {
+    animation-play-state: paused;
+}
+
+.client-set {
+    display: flex;
+    gap: 3rem;
+    padding-right: 3rem;
+    white-space: nowrap;
+}
+
+.client-set > span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-color-muted);
+}
+
+@keyframes client-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .client-track {
+        animation: none;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    .client-set[aria-hidden="true"] {
+        display: none;
+    }
+    .client-set {
+        flex-wrap: wrap;
+        row-gap: 0.75rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .client-marquee {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Publication and media entries (About page) */
+.pub,
+.media-item {
+    width: clamp(600px, 55vw, 900px);
+    margin: 1.2rem 0;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.pub .pub-title,
+.media-item .m-title {
+    font-weight: 600;
+}
+
+.pub .pub-meta,
+.media-item .m-meta {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-color-muted);
+}
+
+/* Compact link rows (About page) */
+article p.section-links {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.95rem;
+    margin: 1rem 0 0 0;
+}
+
+@media (max-width: 1000px) {
+    .pub,
+    .media-item {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .engagement-note {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 /* Recent Posts Section */
@@ -918,156 +1138,6 @@ section > h2:first-of-type {
 }
 
 
-Innodative
-/
-OK< so i wrote a new thought piece and want to post it to innodative. But this one has links to videos hosted on youtube. You suggested we implement that video plugin tags for our markdown, both in the main text and the side notes. DO you recall how to do that?
-
-3:36 PM
-
-Excavated previous conversation about video plugin implementation
-
-
-
-
-Yes, I remember this well! We worked through this in our conversation about converting a PDF thought piece to markdown. Here's the quick reference:
-
-The tags we added to your tufte_tags plugin:
-
-For a main column video:
-
-markdown
-{% video "VIDEO_ID" "Your caption here" %}
-For a full-width video (spans main text + margin):
-
-markdown
-{% fullwidthvideo "VIDEO_ID" "Your caption here" %}
-These use the YouTube video ID (the part after v= in a YouTube URL), generate responsive iframes with the 56.25% padding-bottom trick for proper aspect ratio on mobile, and wrap everything in proper <figure> / <figcaption> markup consistent with your Tufte styling.
-
-We also discussed the possibility of a margin note video using {% marginnote %} but I don't think we implemented a dedicated marginvideo tag. If your new piece needs a video in the side notes, we could either nest raw HTML inside a {% marginnote %} or add a new tag for that.
-
-The full conversation with the implementation code is here: https://claude.ai/chat/83f4b869-2adf-423c-abbb-46e35d9aa31a
-
-Do you want to go ahead and start working on the new thought piece? And do you need video in the margin notes this time, or just main column / full-width?
-
-Yes, lets make these plugins. I will add them to the project repository. Once we know that works, we can convert the thought piece to markdown and try out the new video tags. OK?
-
-3:37 PM
-
-Examined plugin structure and strategized video tag integration approach
-
-
-
-
-Sounds like a solid plan. Let me grab your current tufte_tags plugin from the repo so I can integrate the video tags properly.
-
-
-Architected video tag functions and planned implementation strategy
-
-
-
-
-
-
-
-
-
-
-
-
-Good — I've got enough from our past conversations to reconstruct your plugin structure. Let me build the video tag functions that integrate with your existing tufte_tags plugin.
-
-
-Assembled code solution from existing knowledge
-
-Now let me create the video tag functions. I know your plugin structure — I need to add process_video, process_fullwidthvideo, and let's also add process_marginvideo for side note videos. Plus the calls in process_tufte_tags.
-
-
-Architected responsive video styling enhancements
-
-Now the CSS for responsive video embedding:
-
-
-Devised quick reference documentation for plugin usage
-
-And a test markdown file you can use to verify everything works:
-
-
-Organized plan for plugin implementation and workflow
-
-
-Here are the three files. To integrate them:
-
-1. tufte_tags/__init__.py — Add the three functions from video_tags_addition.py into your existing plugin file, then add these three lines to process_tufte_tags() after the process_marginfigure(text) call:
-
-python
-text = process_video(text)
-text = process_fullwidthvideo(text)
-text = process_marginvideo(text)
-2. tufte.css — Append the contents of video_css_addition.css to the end of your existing stylesheet.
-
-3. video-test.md — Drop this into your content/ directory to test all three tag types. It's set to Status: draft so it won't publish. You can change it to hidden to preview at the URL.
-
-The three tags give you:
-
-{% video "ID" "caption" %} — main column, responsive 16:9
-{% fullwidthvideo "ID" "caption" %} — spans main + margin
-{% marginvideo "id" "ID" "caption" %} — small video in margin, with ⊕ toggle on mobile (same pattern as marginfigure)
-Once you've added these and run pelican --listen --autoreload, let me know how the test page looks and we can move on to converting your thought piece.
-
-Video tags addition
-PY 
-Video css addition
-Code · CSS 
-Video test
-Document · MD 
-
-
-
-
-
-Claude is AI and can make mistakes. Please double-check cited sources.
-Video css addition · CSS
-Copy
-
-/* =============================================================================
-   RESPONSIVE VIDEO ADDITIONS FOR tufte.css
-   =============================================================================
-   ADD this block to your tufte.css file (at the end is fine).
-   
-   Provides responsive 16:9 video containers for:
-   - Main column videos ({% video %})
-   - Full-width videos ({% fullwidthvideo %})
-   - Margin videos ({% marginvideo %})
-   ============================================================================= */
-
-/* Responsive video container - 16:9 aspect ratio */
-.responsive-video {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-}
-
-.responsive-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* Margin video variant - slightly smaller padding for margin context */
-.responsive-video--margin {
-    display: block;
-    margin-bottom: 0.3rem;
-}
-
-/* Ensure fullwidth video figures span correctly */
-figure.fullwidth .responsive-video {
-    clear: both;
-}
 
 /* =============================================================================
    RESPONSIVE VIDEO ADDITIONS FOR tufte.css

@@ -36,6 +36,8 @@ STATIC_PATHS = ['images', 'tools', 'extra', 'thoughts', 'howtos', 'notebook']
 EXTRA_PATH_METADATA = {
     'extra/.nojekyll': {'path': '.nojekyll'},
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.svg': {'path': 'favicon.svg'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
 
 # URL settings for clean URLs
@@ -48,6 +50,10 @@ PAGE_SAVE_AS = '{slug}/index.html'
 AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
+
+# Direct templates: homepage plus the combined Writing landing page
+DIRECT_TEMPLATES = ['index', 'writing']
+WRITING_SAVE_AS = 'writing/index.html'
 
 # Category settings - each topic gets its own page
 CATEGORY_URL = '{slug}/'

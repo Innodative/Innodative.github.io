@@ -1,6 +1,5 @@
 Title: Teaching
 Slug: teaching
-Category_filter: Teaching
 
 {% newthought "I teach" %} courses that bridge technology, data science, and business applications. My focus is helping students understand not just the technical mechanics of emerging technologies, but their strategic implications for business and society.
 
@@ -12,10 +11,13 @@ My courses explore how artificial intelligence, machine learning, and distribute
 
 ## Current Courses
 
-**ACCY 593: AI in Business**  
+**BDI 587: AI in Business**  
 *iMBA Program, University of Illinois at Urbana-Champaign*
 
 **BDI 577: Emerging Technology and Disruption**  
+*iMBA Program, University of Illinois at Urbana-Champaign*
+
+**ACCY 593: Blockchains, Tokens, and Their Business Applications**  
 *iMBA Program, University of Illinois at Urbana-Champaign*
 
 ## Course Materials & Open Educational Resources

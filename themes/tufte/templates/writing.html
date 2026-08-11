@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Writing | {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section>
+    <h1>Writing</h1>
+
+    <p class="filter-links">
+        <a href="{{ SITEURL }}/writing/" class="current">All</a> &middot;
+        <a href="{{ SITEURL }}/thoughts/">Thoughts</a> &middot;
+        <a href="{{ SITEURL }}/notebook/">Notebook</a> &middot;
+        <a href="{{ SITEURL }}/howtos/">HowTos</a> &middot;
+        <a href="{{ SITEURL }}/first-principles/">First Principles</a>
+    </p>
+
+    {% set visible_articles = articles|selectattr('status', 'ne', 'hidden')|list %}
+    {% if visible_articles %}
+    <ul class="article-list">
+        {% for article in visible_articles %}
+        <li>
+            <p class="meta category-label"><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+            <p class="meta">{{ article.date.strftime('%B %d, %Y') }}</p>
+            {% if article.summary %}
+            <p class="summary">{{ article.summary | striptags | truncate(200) }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty-category">No articles yet.</p>
+    {% endif %}
+</section>
+{% endblock %}

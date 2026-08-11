@@ -1,0 +1,20 @@
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A return series up to the present, followed by a wide gray fan of possible futures and a narrower red fan conditioned on another series’ past, labeled transfer entropy from X to Y.">
+  <line x1="40" y1="220" x2="670" y2="220" stroke="#111111" stroke-width="1"/>
+  <line x1="40" y1="220" x2="40" y2="30" stroke="#111111" stroke-width="1"/>
+  <line x1="380" y1="30" x2="380" y2="220" stroke="#d8d8cc" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="380" y="243" font-size="13" font-style="italic" text-anchor="middle" fill="#6b6b60" font-family="Palatino, Georgia, serif">now</text>
+  <text x="655" y="243" font-size="13" font-style="italic" text-anchor="end" fill="#6b6b60" font-family="Palatino, Georgia, serif">t</text>
+  <polyline points="40,150 62,138 84,158 106,131 128,144 150,120 172,133 194,109 216,126 238,102 260,118 282,96 304,112 326,92 348,104 380,98"
+            fill="none" stroke="#111111" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M380,98 L670,20 L670,196 Z" fill="#b9b9ad" opacity="0.28"/>
+  <line x1="380" y1="98" x2="670" y2="20"  stroke="#b9b9ad" stroke-width="1"/>
+  <line x1="380" y1="98" x2="670" y2="196" stroke="#b9b9ad" stroke-width="1"/>
+  <text x="600" y="46" font-size="13" font-style="italic" fill="#6b6b60" font-family="Palatino, Georgia, serif">futures of Y alone</text>
+  <path d="M380,98 L670,66 L670,138 Z" fill="#8a2d2b" opacity="0.18"/>
+  <line x1="380" y1="98" x2="670" y2="66"  stroke="#8a2d2b" stroke-width="1.4"/>
+  <line x1="380" y1="98" x2="670" y2="138" stroke="#8a2d2b" stroke-width="1.4"/>
+  <text x="560" y="126" font-size="13" font-style="italic" fill="#8a2d2b" font-family="Palatino, Georgia, serif">given X’s past</text>
+  <text x="470" y="196" font-size="15" font-style="italic" fill="#111111" font-family="Palatino, Georgia, serif">T</text>
+  <text x="479" y="201" font-size="11" font-style="italic" fill="#111111" font-family="Palatino, Georgia, serif">X→Y</text>
+  <text x="500" y="196" font-size="14" font-style="italic" fill="#6b6b60" font-family="Palatino, Georgia, serif">= how much the fan narrows</text>
+</svg>

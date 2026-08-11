@@ -5,7 +5,16 @@
 {% block content %}
 <section>
     <h1>{{ category }}</h1>
-    
+
+    <p class="filter-links">
+        <a href="{{ SITEURL }}/writing/">All</a> &middot;
+        <a href="{{ SITEURL }}/thoughts/"{% if category.name == 'Thoughts' %} class="current"{% endif %}>Thoughts</a> &middot;
+        <a href="{{ SITEURL }}/notebook/"{% if category.name == 'Notebook' %} class="current"{% endif %}>Notebook</a> &middot;
+        <a href="{{ SITEURL }}/howtos/"{% if category.name == 'HowTos' %} class="current"{% endif %}>HowTos</a> &middot;
+        <a href="{{ SITEURL }}/first-principles/">First Principles</a>
+    </p>
+
+
     {% set visible_articles = articles|selectattr('status', 'ne', 'hidden')|list %}
     {% if visible_articles %}
     <ul class="article-list">

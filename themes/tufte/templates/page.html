@@ -3,9 +3,33 @@
 {% block title %}{{ page.title }} | {{ SITENAME }}{% endblock %}
 
 {% block content %}
-<article>
-    <h1>{{ page.title }}</h1>
-    
+{% set writing_categories = ('Thoughts', 'Notebook', 'HowTos') %}
+{% set is_writing_page = page.category_filter in writing_categories or page.slug == 'first-principles' %}
+{% set academia_slugs = ('academia', 'research', 'teaching', 'media', 'publications') %}
+{% set is_academia_page = page.slug in academia_slugs %}
+<article{% if is_writing_page or is_academia_page %} class="category-page"{% endif %}>
+    <h1{% if is_writing_page or is_academia_page %} class="category-title"{% endif %}>{{ page.title }}</h1>
+
+    {% if is_writing_page %}
+    <p class="filter-links">
+        <a href="{{ SITEURL }}/writing/">All</a> &middot;
+        <a href="{{ SITEURL }}/thoughts/"{% if page.category_filter == 'Thoughts' %} class="current"{% endif %}>Thoughts</a> &middot;
+        <a href="{{ SITEURL }}/notebook/"{% if page.category_filter == 'Notebook' %} class="current"{% endif %}>Notebook</a> &middot;
+        <a href="{{ SITEURL }}/howtos/"{% if page.category_filter == 'HowTos' %} class="current"{% endif %}>HowTos</a> &middot;
+        <a href="{{ SITEURL }}/first-principles/"{% if page.slug == 'first-principles' %} class="current"{% endif %}>First Principles</a>
+    </p>
+    {% endif %}
+
+    {% if is_academia_page %}
+    <p class="filter-links">
+        <a href="{{ SITEURL }}/academia/"{% if page.slug == 'academia' %} class="current"{% endif %}>Overview</a> &middot;
+        <a href="{{ SITEURL }}/research/"{% if page.slug == 'research' %} class="current"{% endif %}>Research</a> &middot;
+        <a href="{{ SITEURL }}/teaching/"{% if page.slug == 'teaching' %} class="current"{% endif %}>Teaching</a> &middot;
+        <a href="{{ SITEURL }}/media/"{% if page.slug == 'media' %} class="current"{% endif %}>Media</a> &middot;
+        <a href="{{ SITEURL }}/publications/"{% if page.slug == 'publications' %} class="current"{% endif %}>Publications</a>
+    </p>
+    {% endif %}
+
     <section>
         {{ page.content }}
     </section>
