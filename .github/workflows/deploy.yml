@@ -28,7 +28,7 @@ jobs:
       
       - name: Build Pelican site
         run: |
-          pelican content -s publishconf.py
+          pelican content -s publishconf.py --delete-output-directory
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
