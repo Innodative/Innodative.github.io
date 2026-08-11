@@ -79,4 +79,4 @@ The complete source for this site is available on [GitHub](https://github.com/In
 
 ## Contact
 
-Questions or suggestions about the site design? [Get in touch](/contact/).
+Questions or suggestions about the site design? [Get in touch](mailto:principal@innodative.com).

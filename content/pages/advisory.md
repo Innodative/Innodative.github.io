@@ -1,17 +1,17 @@
 Title: Advisory
 Slug: advisory
 
-Through my consulting practice, **Innodative**, I advise boards, leadership teams, and founders on artificial intelligence and emerging technology: separating genuine capability from hype, and deciding what to do about it. My judgment comes from doing the work, not summarizing it — three decades of building with these tools, from cosmological surveys to financial markets, now brought to the decisions organizations actually face.
+Through my consulting practice, **Innodative**, I advise boards, leadership teams, and founders on artificial intelligence and emerging technology: separating genuine capability from hype, and deciding what to do about it. Three decades of applying computational methods to hard problems — from cosmological surveys to financial markets — now brought to the decisions organizations actually face.
 
 ## Philosophy
 
-Effective technology advice begins with business problems, not technology solutions. The question is never whether to adopt AI. It is what specific problems these tools might solve, and whether the solutions justify the costs and risks. This problem-first approach avoids technology for its own sake and produces durable recommendations anchored in business value rather than technical trends.
+Effective technology advice begins with business problems, not technology solutions. The question is never whether to adopt AI. It is what specific problems these tools might solve, and whether the solutions justify the costs and risks. The goal is not to recommend technology; it is to help leaders decide where it belongs.
 
 ## Ways of Working
 
 ### Board and advisory roles
 
-Board member, advisory board member, or startup advisor for organizations where emerging technology is central to strategy. I bring an independent, technically grounded voice to decisions that are too often made on vendor claims and headlines.
+Board member, advisory board member, or startup advisor for organizations where emerging technology is central to strategy. I bring an independent voice to decisions that are too often made on vendor claims and headlines.
 
 ### Executive advisory
 
@@ -19,19 +19,29 @@ Working directly with leadership teams weighing AI and emerging technology decis
 
 ### Talks and workshops
 
-Tailored sessions for boards, leadership teams, and professional audiences. Every session is built around your context and the use cases most relevant to your work, not delivered from a stock deck.
+Tailored sessions for boards, leadership teams, and professional audiences. Every session is built around your context and the decisions in front of your team, not a generic AI presentation.
 
-## Why Me
+## Relevant Background
 
 <p class="proof">
 Astrophysicist by training (Ph.D., Johns Hopkins; Caltech), with more than 150 published articles spanning astrophysics, data science, and business analytics. Chief Disruption Officer and Professor of Accountancy at the Gies College of Business, University of Illinois. Recipient of the 2021 ACM SIGMOD Systems Award for contributions to the Sloan Digital Sky Survey. Member of the CNBC Disruptor 50 Academic Advisory Board. The full record is on the <a href="/about/">About</a> page.
 </p>
 
-## Selected Clients
+## Selected Engagements
 
-<div class="client-marquee" aria-label="Selected past clients">
-<div class="client-track">
-<span class="client-set">
+**Diversified industrial holding company** — Presented AI and its business implications to the presidents of every operating unit.
+
+**Education-technology company** — Demonstrated AI avatar technology, then guided the team through creating and deploying their own avatars.
+
+**Energy utility** — Guided machine learning applications that improved sustainability and reduced energy use.
+
+**National organization serving older adults** — Guided machine learning applications in support of its members.
+
+## Selected Organizations
+
+<p class="proof">Organizations I have worked with across advisory, board, workshop, and training engagements.</p>
+
+<div class="client-strip">
 <span>AARP</span>
 <span>AB InBev</span>
 <span>Abbott</span>
@@ -53,57 +63,13 @@ Astrophysicist by training (Ph.D., Johns Hopkins; Caltech), with more than 150 p
 <span>Synchrony</span>
 <span>Target Test Prep</span>
 <span>University of Illinois Research Park</span>
-</span>
-<span class="client-set" aria-hidden="true">
-<span>AARP</span>
-<span>AB InBev</span>
-<span>Abbott</span>
-<span>AGCO</span>
-<span>Ameren</span>
-<span>BP</span>
-<span>Brunswick</span>
-<span>Capital One</span>
-<span>Caterpillar</span>
-<span>CC Industries</span>
-<span>CEB Global</span>
-<span>COUNTRY Financial</span>
-<span>IntelinAir</span>
-<span>John Deere</span>
-<span>Madison Industries</span>
-<span>Northern Trust</span>
-<span>Osborn &amp; Barr</span>
-<span>State Farm</span>
-<span>Synchrony</span>
-<span>Target Test Prep</span>
-<span>University of Illinois Research Park</span>
-</span>
 </div>
-</div>
-
-<script>
-(function () {
-    var track = document.querySelector('.client-marquee .client-track');
-    if (!track) return;
-    var sets = track.querySelectorAll('.client-set');
-    if (sets.length < 2) return;
-    var names = Array.prototype.map.call(sets[0].children, function (s) { return s.textContent; });
-    for (var i = names.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var t = names[i]; names[i] = names[j]; names[j] = t;
-    }
-    Array.prototype.forEach.call(sets, function (set) {
-        Array.prototype.forEach.call(set.children, function (span, k) {
-            span.textContent = names[k];
-        });
-    });
-})();
-</script>
 
 ## How Engagements Run
 
 <div class="engagement-note">
 <p>
-Engagements run as fixed-scope professional engagements through Innodative, not as standalone hours. A typical engagement includes a planning conversation to align on your context and goals, preparation and materials tailored to your organization, the session or advisory work itself, and defined follow-up.
+Engagements are fixed-scope and run through Innodative, not billed as standalone hours. A typical engagement includes a planning conversation to align on your context and goals, preparation and materials tailored to your organization, the session or advisory work itself, and defined follow-up.
 </p>
 <p>
 If a broader effort grows out of an initial engagement, such as ongoing advisory work or a program for your team, that is scoped separately as its own engagement.
