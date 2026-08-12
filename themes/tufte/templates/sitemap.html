@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ SITEURL }}/</loc></url>
+  <url><loc>{{ SITEURL }}/writing/</loc></url>
+{% for name in ('thoughts', 'notebook', 'howtos') %}  <url><loc>{{ SITEURL }}/{{ name }}/</loc></url>
+{% endfor %}{% for page in pages if page.status != 'hidden' %}  <url><loc>{{ SITEURL }}/{{ page.url }}</loc></url>
+{% endfor %}{% for article in articles if article.status != 'hidden' %}  <url><loc>{{ SITEURL }}/{{ article.url }}</loc><lastmod>{{ (article.modified or article.date).strftime('%Y-%m-%d') }}</lastmod></url>
+{% endfor %}</urlset>

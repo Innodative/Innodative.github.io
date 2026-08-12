@@ -3,6 +3,8 @@ Date: 2022-07-14
 Category: Archive
 Tags: blockchain, technology, interview
 Slug: blockchain-potential-2022
+Url: archive/blockchain-potential-2022/
+Save_as: archive/blockchain-potential-2022/index.html
 Status: hidden
 
 *Originally published at [Illinois News Bureau](https://news.illinois.edu/whats-the-potential-of-blockchain-technology/), July 14, 2022*

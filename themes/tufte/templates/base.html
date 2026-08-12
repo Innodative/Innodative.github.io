@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}AI and emerging technology advisory, research, and writing by Robert J. Brunner, Founder and Principal of Innodative.{% endblock %}">
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}AI and emerging technology advisory, research, and writing by Robert J. Brunner.{% endblock %}">
+    <meta property="og:url" content="{{ SITEURL }}{% block og_url %}/{% endblock %}">
+    <meta property="og:image" content="{{ SITEURL }}/images/site/headshot.jpg">
+    <meta name="twitter:card" content="summary">
     <link rel="icon" href="{{ SITEURL }}/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="{{ SITEURL }}/favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/tufte.css?v=3">
@@ -69,7 +77,7 @@
 
     <footer class="site-footer">
         <p>Advisory inquiries: <a href="{{ SITEURL }}/advisory/">Innodative</a> &middot; <a href="mailto:principal@innodative.com">principal@innodative.com</a></p>
-        <p>&copy; {{ SITENAME }} &middot; <a href="{{ SITEURL }}/colophon/">Colophon</a></p>
+        <p>&copy; {{ SITENAME }} &middot; <a href="{{ SITEURL }}/colophon/">Colophon</a>{% if FEED_ALL_ATOM %} &middot; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">RSS</a>{% endif %}</p>
     </footer>
 </body>
 </html>

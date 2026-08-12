@@ -1,10 +1,10 @@
 Title: Paper Records as Unhackable Backup
 Date: 2026-04-20
 Modified: 2026-04-23
-Draft: true
 Category: Notebook
 Tags: ai, security, cybersecurity, personal-finance
 Slug: paper-records-as-unhackable-backup
+Draft: true
 Summary: Why the oldest backup medium may be the newest defense.
 
 This month Anthropic announced Mythos, an AI model the company says is too dangerous to release publicly. {% sidenote "mythos-announcement" "*Scientific American*, '[What is Mythos and why are experts worried about Anthropic's AI model](https://www.scientificamerican.com/article/what-is-mythos-and-why-are-experts-worried-about-anthropics-ai-model/).'" %} Mythos can autonomously find zero-day vulnerabilities across every major operating system, chain them into working exploits, and cover its tracks. The UK's AI Security Institute found it succeeded on expert-level hacking tasks 73 percent of the time. No AI before April 2025 could complete those tasks at all.

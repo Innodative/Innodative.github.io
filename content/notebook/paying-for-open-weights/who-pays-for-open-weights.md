@@ -1,10 +1,10 @@
 Title: Who Pays for Open Weights?
 Date: 2026-04-19
-Draft: true
 Modified: 2026-05-01
 Category: Notebook
 Tags: ai, open-source, china, economics
 Slug: who-pays-for-open-weights
+Draft: true
 Summary: The golden age of free Chinese frontier models is ending. A note on why, and who fills the gap.
 
 Frontier AI models cost money to train. Someone has to pay for the compute, the researchers, the data. For the past year and a half, a puzzle has hung over the industry: why were Chinese labs releasing frontier-tier open weights for free? I've been one of the beneficiaries, running Qwen and DeepSeek locally on my Mac Studio for work where I want privacy or throughput.

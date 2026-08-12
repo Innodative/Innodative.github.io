@@ -3,6 +3,8 @@ Date: 2023-05-17
 Category: Archive
 Tags: artificial intelligence, AI, ChatGPT, interview
 Slug: ai-transformative-potential-2023
+Url: archive/ai-transformative-potential-2023/
+Save_as: archive/ai-transformative-potential-2023/index.html
 Status: hidden
 
 *Originally published at [Gies College of Business](https://giesbusiness.illinois.edu/news/2023/05/17/what-s-the-transformative-potential-of-artificial-intelligence), May 17, 2023*

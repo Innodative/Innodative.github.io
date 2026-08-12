@@ -19,12 +19,12 @@ Key design principles:
 
 ## Technical Stack
 
-- **[Pelican](https://getpelican.com/)** — Static site generator written in Python
-- **[Jinja2](https://jinja.palletsprojects.com/)** — Template engine for page layouts
-- **Custom theme** — Built from scratch, inspired by Tufte CSS
-- **Custom plugin** — Provides Jekyll-style tags for Tufte elements
-- **[GitHub Pages](https://pages.github.com/)** — Hosting and deployment
-- **[Markdown](https://daringfireball.net/projects/markdown/)** — Content authoring format
+- **[Pelican](https://getpelican.com/)**: Static site generator written in Python
+- **[Jinja2](https://jinja.palletsprojects.com/)**: Template engine for page layouts
+- **Custom theme**: Built from scratch, inspired by Tufte CSS
+- **Custom plugin**: Provides Jekyll-style tags for Tufte elements
+- **[GitHub Pages](https://pages.github.com/)**: Hosting and deployment
+- **[Markdown](https://daringfireball.net/projects/markdown/)**: Content authoring format
 
 Static sites like this one require no database or server-side processing. They're fast, secure, and simple to maintain—just HTML, CSS, and JavaScript files served directly to browsers.
 

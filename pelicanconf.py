@@ -29,7 +29,7 @@ THEME = 'themes/tufte'
 # Pagination
 DEFAULT_PAGINATION = 10
 
-ARTICLE_PATHS = ['thoughts', 'howtos', 'notebook']
+ARTICLE_PATHS = ['thoughts', 'howtos', 'notebook', 'archive']
 # Static paths
 # Static paths — includes category dirs so co-located images are copied to output
 STATIC_PATHS = ['images', 'tools', 'extra', 'thoughts', 'howtos', 'notebook']
@@ -38,6 +38,7 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/favicon.svg': {'path': 'favicon.svg'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/robots.txt': {'path': 'robots.txt'},
 }
 
 # URL settings for clean URLs
@@ -52,7 +53,8 @@ TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
 # Direct templates: homepage plus the combined Writing landing page
-DIRECT_TEMPLATES = ['index', 'writing']
+DIRECT_TEMPLATES = ['index', 'writing', 'sitemap']
+SITEMAP_SAVE_AS = 'sitemap.xml'
 WRITING_SAVE_AS = 'writing/index.html'
 
 # Category settings - each topic gets its own page

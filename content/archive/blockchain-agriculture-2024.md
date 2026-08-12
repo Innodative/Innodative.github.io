@@ -3,6 +3,8 @@ Date: 2024-05
 Category: Archive
 Tags: blockchain, AI, agriculture, supply chain
 Slug: blockchain-agriculture-2024
+Url: archive/blockchain-agriculture-2024/
+Save_as: archive/blockchain-agriculture-2024/index.html
 Status: hidden
 
 *Originally published in [Illinois Soy Magazine](https://issuu.com/ilsoybean/docs/ill._soy_magazine_may_2024_28pages/s/47229821), May 2024*

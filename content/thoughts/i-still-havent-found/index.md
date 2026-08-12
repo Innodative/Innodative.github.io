@@ -3,7 +3,7 @@ Date: 2026-02-15
 Category: Thoughts
 Tags: AI, avatars, higher education, authenticity, synthetic media
 Slug: i-still-havent-found
-Summary: From manipulated video to interactive dialogue in four years — a journey through AI avatar development that reveals a deeper challenge: when synthetic media becomes indistinguishable, how do we define authenticity?
+Summary: From manipulated video to interactive dialogue in four years—a journey through AI avatar development that reveals a deeper challenge: when synthetic media becomes indistinguishable, how do we define authenticity?
 
 {% newthought "When people learn what I do," %} they're often intrigued.
 As Chief Disruption Officer, I spend most of my time contemplating the
@@ -116,7 +116,7 @@ got this video."{% sidenote "sn-side-by-side" "The side-by-side
 introduction is embedded in the full [AI for
 Business](https://giesonline.illinois.edu/courses/accy-593-ai-in-
 business-fundamentals-applications-and-the-future) course highlight
-webpage. Full transparency — showing students exactly what they were
+webpage. Full transparency—showing students exactly what they were
 seeing. My mother noticed my last name was now pronounced correctly!" %}
 
 Outside of the studio, Gies developed what I believe is the first

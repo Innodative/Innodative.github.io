@@ -3,6 +3,8 @@ Date: 2023-02-08
 Category: Archive
 Tags: AI, avatar, teaching, education
 Slug: gmi-post-ai-avatar-2023
+Url: archive/gmi-post-ai-avatar-2023/
+Save_as: archive/gmi-post-ai-avatar-2023/index.html
 Status: hidden
 
 *Originally published at GMI Post, February 8, 2023*

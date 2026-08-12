@@ -2,6 +2,11 @@
 
 {% block title %}{{ page.title }} | {{ SITENAME }}{% endblock %}
 
+{% block meta_description %}{% if page.summary %}{{ page.summary|striptags|truncate(155)|e }}{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block og_title %}{{ page.title|e }}{% endblock %}
+{% block og_description %}{% if page.summary %}{{ page.summary|striptags|truncate(155)|e }}{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block og_url %}/{{ page.url }}{% endblock %}
+
 {% block content %}
 {% set writing_categories = ('Thoughts', 'Notebook', 'HowTos') %}
 {% set is_writing_page = page.category_filter in writing_categories or page.slug == 'first-principles' %}

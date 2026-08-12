@@ -2,6 +2,12 @@
 
 {% block title %}{{ article.title }} | {{ SITENAME }}{% endblock %}
 
+{% block meta_description %}{% if article.summary %}{{ article.summary|striptags|truncate(155)|e }}{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_title %}{{ article.title|e }}{% endblock %}
+{% block og_description %}{% if article.summary %}{{ article.summary|striptags|truncate(155)|e }}{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block og_url %}/{{ article.url }}{% endblock %}
+
 {% block content %}
 <article>
     <h1>{{ article.title }}</h1>

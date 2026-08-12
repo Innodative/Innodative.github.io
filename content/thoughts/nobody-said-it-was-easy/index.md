@@ -2,7 +2,7 @@ Title: Nobody Said It Was Easy
 Date: 2026-03-04
 Category: Thoughts
 Tags: AI, Teaching, Higher Education, Course Design
-Summary: Eight modules, 120 videos, a rapidly changing field, and student feedback pulling in different directions. I ran an experiment — an extended conversation with Claude — to scope a full course revision. Here's what happened, and what it might mean for how teaching and learning teams work.
+Summary: Eight modules, 120 videos, a rapidly changing field, and student feedback pulling in different directions. I ran an experiment—an extended conversation with Claude—to scope a full course revision. Here's what happened, and what it might mean for how teaching and learning teams work.
 Status: published
 
 {% newthought "I may be biased," %} but I think my AI for Business
@@ -15,7 +15,7 @@ different modules. And students wanted more technical depth, not less.
 We designed and built the course two years ago. Now, generative AI
 barely resembles what it looked like then. A refresh is clearly needed,
 but how and what? I was reminded of a line from the Coldplay song, *The
-Scientist*: "Nobody said it was easy."{% marginnote "mn-coldplay" "Coldplay — <a href='https://www.youtube.com/watch?v=RB-RcX5DS5A'><em>The Scientist</em></a> (2002). The reverse-narrative video is worth watching on its own terms." %}
+Scientist*: "Nobody said it was easy."{% marginnote "mn-coldplay" "Coldplay—<a href='https://www.youtube.com/watch?v=RB-RcX5DS5A'><em>The Scientist</em></a> (2002). The reverse-narrative video is worth watching on its own terms." %}
 
 Yet, as I thought about how AI has changed over the last few years and
 the current course structure, I was reminded of the next line in that
@@ -81,7 +81,7 @@ Teaching and Learning staff concrete data for workload planning." %}
 One example: students specifically valued the infrastructure content,
 mentioning TPUs and ASICs by name.{% marginnote "mn-hardware" "TPUs
 (Tensor Processing Units) and ASICs (Application-Specific Integrated
-Circuits) are specialized hardware designed for AI workloads — faster
+Circuits) are specialized hardware designed for AI workloads—faster
 and more efficient than general-purpose processors for tasks like
 training and running neural networks." %} Without working through the
 full picture, I might have cut that material to make room. Instead, we
@@ -100,7 +100,7 @@ months. I didn't have the time or resources to make these changes.
 
 Together with Cheng Li, a senior learning designer at Gies, we figured
 out what we could do now to keep the course fresh while postponing the
-full revision. Our answer was module guides — concise documents that
+full revision. Our answer was module guides—concise documents that
 bridge the foundational Coursera videos to current developments in the
 field.{% sidenote "sn-guides" "Each module guide follows a consistent
 template: what the Coursera videos cover, what's new in the field since
@@ -162,13 +162,13 @@ gap: module guides, updated assessments, and refreshed live sessions."
 Faculty react to a concrete, realistic proposal rather than scoping big
 and getting negotiated down. The full scope document shows what each
 tier requires: now, next, and later. Faculty still weigh in on
-priorities. They just aren't starting from zero — and they aren't
+priorities. They just aren't starting from zero—and they aren't
 getting told "no" without an alternative.
 
 Those per-module carryover estimates are data, not guesswork. They could
 feed directly into workload modeling and timeline planning. And if the
-scoping produces precise change orders — like "update this case study in
-lecture 3 of module 7" rather than "module 7 needs a refresh" — even the
+scoping produces precise change orders—like "update this case study in
+lecture 3 of module 7" rather than "module 7 needs a refresh"—even the
 production side gets easier.{% sidenote "sn-avatar" "Precise change
 orders also pair naturally with avatar-generated video for surgical
 updates. Need to update a single case study? Re-script and regenerate
