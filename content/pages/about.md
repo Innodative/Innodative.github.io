@@ -7,7 +7,7 @@ I'm Chief Disruption Officer, Professor of Accountancy, and Arthur Andersen Fell
 
 ### Business and analytics leadership (2017–present)
 
-As Associate Dean for Innovation (2019–2025), founded the Disruption Lab, established the Data Science Research Service, and directed the UI-Deloitte Foundation Center for Business Analytics following a $5 million pledge. Supervised the iVenture Accelerator (100+ ventures, $160M+ raised, 1,000+ jobs created) and experiential learning programs serving 150+ corporate clients annually. Introduced AI-driven instruction with multilingual avatar-based course delivery.
+As Associate Dean for Innovation (2019–2025), founded the Disruption Lab, established the Data Science Research Service, and directed the UI-Deloitte Foundation Center for Business Analytics following a \$5 million pledge. Supervised the iVenture Accelerator (100+ ventures, \$160M+ raised, 1,000+ jobs created) and experiential learning programs serving 150+ corporate clients annually. Introduced AI-driven instruction with multilingual avatar-based course delivery.
 
 ### Data science leadership (2014–2017)
 
