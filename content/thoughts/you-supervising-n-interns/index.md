@@ -25,7 +25,7 @@ A novice can now vibe-code a working application that is itself an agent.{% side
 
 **The machine took the typing. It did not take the knowing.**
 
-This new world may seem scary. As David Byrne sings, "Well... how did I get here?"{% marginnote "once-in-a-lifetime" "Talking Heads, 'Once in a Lifetime,' from *Remain in Light* (1980), written by David Byrne, Brian Eno, and the band. [Watch the video](https://www.youtube.com/watch?v=5IsSpAOD6K8)." %}
+This new world may seem scary. As David Byrne sings, "Well... how did I get here?"{% marginnote "mn-1" "Talking Heads, 'Once in a Lifetime,' from *Remain in Light* (1980), written by David Byrne, Brian Eno, and the band. [Watch the video](https://www.youtube.com/watch?v=5IsSpAOD6K8)." %}
 
 Thinking it through afterward, I understood why the line had worked. The blueprint was the framework I use with a new student who joins my research team: assign a small task, examine the result, and broaden the task when the result and the demonstrated understanding earn it. Nobody learns it from a textbook. It comes from trial and error, or from the experience of being on the other side. In the end, anyone who has supervised interns arrives at it, because it is the only thing that works.
 
