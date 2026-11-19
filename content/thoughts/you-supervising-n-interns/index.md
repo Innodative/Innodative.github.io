@@ -12,7 +12,7 @@ Draft: true
 
 A year ago, we sat with a prompt. We asked, it answered, and every decision in between was ours, including the bad ones.
 
-Now we hand it an assignment and off it goes. Which source to trust, which exception to skip, which shortcut is harmless. You decide what to hand over, you read the output, and you own the result. But we no longer make every choice that produces it.
+Now we hand it an assignment and off it goes. Which source to trust, which exception to skip, which shortcut is harmless: it decides, and we find out later. We still own the result. But we no longer make every choice that produces it.
 
 On the face of it, this is unsettling, and it should be. Our reputation matters; have we outsourced it?
 
@@ -29,11 +29,11 @@ And this new agent, unprompted, makes tradeoffs the novice did not know existed.
 
 This new world may seem scary. As David Byrne sings, "Well... how did I get here?"{% marginnote "mn-1" "Talking Heads, 'Once in a Lifetime,' from *Remain in Light* (1980), written by David Byrne, Brian Eno, and the band. [Watch the video](https://www.youtube.com/watch?v=5IsSpAOD6K8)." %}
 
-Thinking it through afterward, I understood why the line had worked. The blueprint was the framework I use with a new student who joins my research team. I assign a small task, examine the result, and broaden the task when the result and the demonstrated understanding earn it. Nobody learns it from a textbook. It comes from trial and error, or from the experience of being on the other side. In the end, anyone who has supervised interns arrives at it, because it is the only thing that works.
+Thinking it through afterward, I understood why what I told the client had worked. The blueprint was the framework I use with a new student who joins my research team. I assign a small task, examine the result, and broaden the task when the result and the demonstrated understanding earn it. Nobody learns it from a textbook. It comes from trial and error, or from the experience of being on the other side. In the end, anyone who has supervised interns arrives at it, because it is the only thing that works.
 
 If you've used agents (or good interns) the benefit is plain. You get more done. Yet the cost is that the job changes underneath you, which can be unsettling.
 
-Someone else is making the intermediate choices, and the work that remains is judging what came back and owning it, whether or not you saw it being made. That is a real adaptation, and it is also one most people have already made once. Guiding an intern or a student teaches exactly these skills: deciding what to hand over, reading the output, and owning the result. The agent asks for nothing new in kind. It asks for those skills at higher volume, and the volume is the hard part. We are humans after all.
+Someone else is making the intermediate choices, and the work that remains is judging what came back and owning it, whether or not you saw it being made. That is a real adaptation, and it is also one most people have already made once. Guiding an intern or a student teaches exactly these skills. You decide what to hand over, you read the output, and you own the result. The agent asks for nothing new in kind. It asks for those skills at higher volume, and the volume is the hard part. We are humans after all.
 
 Change is hard; I am not saying otherwise. The intern mindset doesn't guarantee job security. Instead, it shows the path to becoming more valuable to the company. The person who can guide agents is in a better position than the person who refuses to do so. And refusing is not a neutral choice; the work is moving whether or not any particular employee moves with it.
 
