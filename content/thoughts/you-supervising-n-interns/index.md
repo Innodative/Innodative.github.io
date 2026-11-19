@@ -7,7 +7,7 @@ Slug: you-supervising-n-interns
 Authors: Robert Brunner 
 Summary: Moving from chat to agents hands the intermediate decisions to the machine. The job that remains is the one you learned supervising interns: hand over small, check the work, own the result. Draft: true
 
-{% new_thought "I was recently describing" %} to a client how AI work is changing when I wondered just how we got here?
+{% newthought "I was recently describing" %} to a client how AI work is changing when I wondered just how we got here?
 
 A year ago, we sat with a prompt. We asked, it answered, and every decision in between was ours, including the bad ones.
 
